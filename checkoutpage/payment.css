@@ -1,0 +1,124 @@
+body{
+    /* background-color: aqua; */
+}
+
+.nav {
+    display: flex;
+justify-content: space-between;
+
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+align-items: center;
+width:60%;
+margin: 2% auto auto auto;
+}
+.nav>img{
+    width: 8rem;
+    height: 2.5rem;
+}
+
+.nav>div{
+    display: flex;
+    align-items: center;
+}
+.nav>div>img{
+    width: 2.5rem;
+    height: 2rem;
+   
+}
+
+
+#details{
+    width: 60%;
+    margin: auto;
+}
+.form{
+    width: 65%;
+}
+
+#formsubmit{
+
+margin: auto;
+}
+
+#firstname{
+    width: fit-content;
+   
+}
+
+.form-group {
+    position: relative;
+    margin-bottom: 20px;
+    width: 40%;
+  }
+  
+  .form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    position: relative; /* Add relative positioning */
+    background: transparent; /* Make the input background transparent */
+  }
+  
+  .form-control:focus {
+     border-color:red; /*Change border color when the input is focused */
+  }
+  
+  label {
+    position: absolute;
+    bottom: 10px; /* Adjust the label's vertical position */
+    left: 10px;
+    pointer-events: none;
+    transition: 0.2s ease all;
+  }
+  
+  .form-control:focus + label,
+  .form-control:valid + label {
+    bottom: 34px; /* Move label to the border line when focused or has content */
+    font-size: 16px;
+    /* color: #007bff; */
+    border:none;
+  }
+
+  #formsubmit>div:nth-child(1){
+    
+    display: flex;
+    justify-content: space-between;
+  }
+  
+
+  .form-group1 {
+    position: relative;
+    margin-bottom: 20px;
+    
+  }
+
+  #firstname1{
+  padding-left: 97%;
+  width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    position: relative; /* Add relative positioning */
+    background: transparent; /* Make the input background transparent */
+
+  }
+
+  #formsubmit>div:nth-child(3){
+  
+    display: flex;
+    justify-content: space-around;
+  }
+
+  #formsubmit>div:nth-child(4){
+  
+    display: flex;
+    justify-content: space-around;
+  }
+
+  #formsubmit>div:nth-child(5){
+   
+    display: flex;
+    justify-content: space-around;
+  }
+  
