@@ -30,26 +30,32 @@ margin: 2% auto auto auto;
 #details{
     width: 60%;
     margin: auto;
+  display: flex;
+  flex-direction: column;
 }
 .form{
     width: 65%;
 }
 
 #formsubmit{
-
+width: 65%;
 margin: auto;
+border: 2px solid red;
 }
 
-#firstname{
+/* #firstname{
     width: fit-content;
    
-}
+} */
 
 .form-group {
     position: relative;
     margin-bottom: 20px;
-    width: 40%;
+    width: 100%;
+    background-color: yellow;
   }
+  
+
   
   .form-control {
     width: 100%;
@@ -83,7 +89,7 @@ margin: auto;
   #formsubmit>div:nth-child(1){
     
     display: flex;
-    justify-content: space-between;
+    
   }
   
 
@@ -93,15 +99,33 @@ margin: auto;
     
   }
 
+
+  #firstname{
+    margin-left: 2%;
+    width: 85%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      position: relative; /* Add relative positioning */
+      background: transparent; /* Make the input background transparent */
+  
+    }
+
   #firstname1{
-  padding-left: 97%;
-  width: 100%;
+  /* padding-left: 97%; */
+  width: 95%;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
     position: relative; /* Add relative positioning */
     background: transparent; /* Make the input background transparent */
 
+  }
+
+  #formsubmit>div:nth-child(2){
+  
+    display: flex;
+    /* justify-content: space-around; */
   }
 
   #formsubmit>div:nth-child(3){
@@ -111,14 +135,41 @@ margin: auto;
   }
 
   #formsubmit>div:nth-child(4){
-  
+   
     display: flex;
     justify-content: space-around;
   }
-
   #formsubmit>div:nth-child(5){
    
     display: flex;
     justify-content: space-around;
   }
+  #formsubmit>div:nth-child(6){
+   
+    display: flex;
+    justify-content: space-around;
+    background-color: blue;
+  }
   
+  .checkbox{
+    /* align-items: flex-start; */
+    justify-content: flex-start;
+    /* border-top: 1px solid #dadcdf; */
+    color: #626669;
+    cursor: pointer;
+    display: flex;
+    font-size: 14px;
+    justify-content: flex-start;
+    line-height: 21px;
+    margin: 16px auto auto;
+    padding: 16px 0 0;
+    position: relative;
+    width: 65%;
+
+  }
+
+  #img{
+    justify-content: flex-start;
+    
+    display: flex;
+  }
