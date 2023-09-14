@@ -1,0 +1,11 @@
+#parent{
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    width: fit-content;
+}
+#parent div{
+    margin: 20px;
+}
+img{
+    width: 100%;
+}
