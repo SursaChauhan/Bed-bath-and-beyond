@@ -16,8 +16,33 @@
 </div>
 
 <div id="details" >
-      <form id="formsubmit">
-       <div> 
+ 
+ 
+ 
+ 
+ 
+ 
+  <div style="width: 70%;"> 
+
+
+<div id="plogo">
+  <button ><img src="https://1000logos.net/wp-content/uploads/2021/04/Paypal-logo.png" alt="" style="width: 90%;  height: 100%;"> </button>
+
+  <button style="width: 40%; height: 3rem;"><img src="https://images.secretlab.co/theme/common/logo_paypalcredit.png" alt=""  style="width: 90%; height: 100%;"> </button>
+</div>
+
+  <form id="formsubmit" >
+
+       
+          <div class="form-group1">
+              <input type="text" id="firstname1" class="form-control" required>
+              <label for="firstname1">Email Address  (We'll send order info here)</label>
+            </div>
+            
+          
+      
+
+       <div style="border: 2px solid black;"> 
         <div class="form-group">
             <input type="text" id="firstname" class="form-control" required>
             <label for="firstname">First Name</label>
@@ -29,14 +54,14 @@
         
     </div>
 
-    <div> 
+   
         <div class="form-group1">
-            <input type="text" id="firstname1"  required>
-            <label for="firstname">Address Line 1</label>
+            <input type="text" id="firstname1" class="form-control"  required>
+            <label for="firstname1">Address Line 1</label>
           </div>
           
         
-    </div>
+    
     <div> 
         <div class="form-group">
             <input type="text" id="firstname" class="form-control" required>
@@ -93,9 +118,78 @@
 
       
       </form>
+
+      <div class="checkbox">
+<input type="checkbox" name="sms" id="check" value="on" >
+<label for="check" style="position: relative;">Use shipping address for billing</label>
+      </div>
+<hr>
+
+<div class="checkbox">
+  <input type="checkbox" name="sms" id="check" value="on" >
+  <label for="check" style="position: relative;">Receive text updates about your order.</label>
+        </div>
+
+        <div id="paymentoption" style="width: 65%;">
+          <h3>Payment Options</h3>
+          <div class="checkbox">
+            <input type="checkbox" name="sms" id="check" value="on" >
+            <label for="check" style="position: relative;">Credit / Debit / Overstock Card</label>
+                  </div>
+
+                  <div id="img">
+                    <img src="https://www.freepnglogos.com/uploads/visa-card-logo-9.png" alt="" style="width: 2rem;">
+                    <img src="https://www.pngplay.com/wp-content/uploads/12/Visa-Card-Logo-No-Background.png" alt="" style="width: 2rem;">
+                    <img src="https://www.transparentpng.com/thumb/atm-card/r05cSo-picture-credit-card-your-bank-atm-card-dowland.png" alt="" style="width: 2rem;">
+                    <img src="https://www.pngall.com/wp-content/uploads/2016/05/ATM-Card-Download-PNG.png" alt="" style="width: 2rem;">
+                  </div>
+
+                  <div class="form-group1">
+                    <input type="text" id="firstname1" class="form-control" required>
+                    <label for="firstname1">Card Number</label>
+                  </div>
+
+                  <div style="display: flex; gap: 10px;">
+                    <div class="form-group1">
+                      <input type="text" id="firstname1" class="form-control" required>
+                      <label for="firstname1">Exp Month </label>
+                    </div>
+
+                    <div class="form-group1">
+                      <input type="text" id="firstname1" class="form-control" required>
+                      <label for="firstname1">Exp Year</label>
+                    </div>
+                    <div class="form-group1">
+                      <input type="text" id="firstname1" class="form-control" required>
+                      <label for="firstname1">CVV </label>
+                    </div>
+
+                 
+
+                  </div>
+                  <div class="checkbox">
+                    <input type="checkbox" name="sms" id="check" value="on" >
+
+                    <label for="check" style="position: relative;"> <img src="https://hostbillapp.com/appstore/payment_paypal/images/thumbnails/m_logo.png" alt="" style="width: 4rem;"> </label>
+
+                    <label for="check" style="position: relative;"> <img src="https://www.ppro.com/wp-content/uploads/2021/06/paypal-credit.png" alt="" style="width: 4rem;"> </label>
+                  
+                          </div>
+
+                          <div class="checkbox">
+                            <input type="checkbox" name="sms" id="check" value="on" >
+                            <label for="check" style="position: relative;">Use an Overstock Gift Card</label>
+                                  </div>
+        </div>
+      </div>  
+
+        <div class="submit">
+          <h1>hello world this is payment </h1>
+        </div>
     </div>
-    <div class="submit"></div>
-</div>
+
+    
+    
     
 </body>
 <script src="./payment.js"></script>
