@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+     <div>
+        <img src="https://th.bing.com/th/id/R.f9759142f66811aa5b1e81aa62046acc?rik=VIznPnZd8KDBVw&riu=http%3a%2f%2fpurepng.com%2fpublic%2fuploads%2flarge%2fpurepng.com-bed-bath-beyond-logologobrand-logoiconslogos-251519938589ts5tm.png&ehk=uS%2bh%2fn9VS8%2byOuD6lRhgXx6q8cuVyDU5%2fgJqFmkSyM0%3d&risl=&pid=ImgRaw&r=0" alt="logo">
+        <hr>
+        <img src="https://th.bing.com/th/id/R.c66a5446a9f2aef1c64a3ff672817f82?rik=xPAmsBAqdKoNSQ&riu=http%3a%2f%2flifeasmama.com%2fwp-content%2fuploads%2f2016%2f10%2f20141110_mediapage_overstock_logo2-large-1024x246.png&ehk=PON7fAlH8BlRMbVEPLYCHYzqq8fJhvI3pGVsr9at1Z0%3d&risl=&pid=ImgRaw&r=0" alt="logo">
+     </div>
+     <h2>Joining us from Bed Bath & Beyond?</h2>
+     <p>Update your password if you already have a preferred email associated with your account.</p>
+     <div> <button id="setNewPasswordButton">Set a New Password</button></div>
+    </div>
+    <div id="main">
+        <div class="account" >
+            <i class="fa-solid fa-user"><span>Create Account</span></i>
+           <form>
+            <input type="text" id="email" placeholder="Email" required><br>
+            <input type="text" id="password" placeholder="Password" required><br>
+            <input type="checkbox" id="check">
+            <label for="check">Keep me signed in.</label><br>
+            <button>
+                 Create Account
+            </button>
+           </form>
+           <p>By creating an account, you agree to our <a href="#">Terms & Conditions</a> and <a href="#">Privacy Policy</a>.</p>
+          
+        </div>
+        <hr>
+        <div class="Sign" >
+            <i class="fa-solid fa-user"><span>Sign in</span></i>
+           <form>
+            <input type="text" id="email" placeholder="Email" required><br>
+            <input type="text" id="password" placeholder="Password" required><br>
+            <input type="checkbox" id="check">
+            <label for="check">Keep me signed in.</label><br>
+            <button>
+                 Sign In
+            </button>
+           </form>
+           <p><a href="#" id="forgotPasswordLink">Forgot your password</a></p>
+        </div>
+    </div>
+   
+    <div>
+      <div id="login">
+        <!-- <button><img class="img1" src="./image/google.png" alt="logo">Continue with Google</button><br> -->
+        <button id="continueWithGoogleButton"><img class="img1" src="./image/google.png" alt="logo">Continue with Google</button><br>
+        <button><img class="img2" src="./image/facebook.png" alt="logo">Continue with Facebook</button>
+    </div>
+</body>
+<script src="login.js"></script>
+ </html> 
