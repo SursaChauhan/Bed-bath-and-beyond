@@ -10,34 +10,33 @@
         #main-nav{
             display: flex;
             justify-content: space-between;
-            height: 200px;
+            height: 36px;
+            align-items: center;
+            padding: 0 16px;
         }
-        /* #main-nav>div{
-            height: 200px;
-        } */
-        #sections{
+        #sections, #main-nav, #category-div{
             display: flex;
         }
-        #main-nav form>button{
-            height: 200px;
+        #main-nav>img{
+            width: 20%;
         }
-        /* img{
-            width: 100%;
-        } */
+        
     </style>
 </head>
 <body>
     <div id="nav">
         <header>
             <div>
-                <div id="goSignup">
-                    <p>Sign up to receive our latest <b>deals</b> and get a <b>10% off coupon</b>.</p>
-                </div>
-                <div id="signup">
-                    <form action="submit">
-                        <input type="email" placeholder="Enter your email">
-                        <button>Submit</button>
-                    </form>
+                <div id="signup-div">
+                    <div id="goSignup">
+                        <p>Sign up to receive our latest <b>deals</b> and get a <b>10% off coupon</b>.</p>
+                    </div>
+                    <div id="signup">
+                        <form action="submit">
+                            <input type="email" placeholder="Enter your email">
+                            <button>Submit</button>
+                        </form>
+                    </div>
                 </div>
                 <div>
                     <p>Ships to: <img src="" alt=""></p>
@@ -48,7 +47,7 @@
                         <form action="#">
                             <input type="text" placeholder="Search... everything you find ships for free">
                             <button type="submit" aria-label="search">
-                                <img src="./IMAGES/Search-button.png" alt="search">
+                                <img src="./IMAGES/svg/Magnifier.svg" alt="search">
                             </button>
                         </form>
                     </div>
@@ -57,6 +56,60 @@
                         <div>Acoount</div>
                         <div>Lists</div>
                         <div>Cart</div>
+                    </div>
+                </div>
+                <div id="category-div">
+                    <div>
+                        <a href="">Bedding</a>
+                        <div class="category-hover"></div>
+                    </div>
+                    <div>
+                        <a href="">Kitchen</a>
+                        <div class="category-hover"></div>
+                    </div>
+                    <div>
+                        <a href="">Bath</a>
+                        <div class="category-hover"></div>
+                    </div>
+                    <div>
+                        <a href="">Furniture</a>
+                        <div class="category-hover"></div>
+                    </div>
+                    <div>
+                        <a href="">Rugs</a>
+                        <div class="category-hover"></div>
+                    </div>
+                    <div>
+                        <a href="">Decor</a>
+                        <div class="category-hover"></div>
+                    </div>
+                    <div>
+                        <a href="">Outdoor</a>
+                        <div class="category-hover"></div>
+                    </div>
+                    <div>
+                        <a href="">Home Improvement</a>
+                        <div class="category-hover"></div>
+                    </div>
+                    <div>
+                        <a href="">Lighting</a>
+                        <div class="category-hover"></div>
+                    </div>
+                    <div>
+                        <a href="">Kids & Baby</a>
+                        <div class="category-hover"></div>
+                    </div>
+                    <div>
+                        <a href="">More</a>
+                        <div class="category-hover"></div>
+                    </div>
+                    <div>
+                        <a href="">Ideas</a>
+                        <div class="category-hover"></div>
+                    </div>
+                    <div>
+                        <a href="">Sales & Deals</a>
+                        <div class="category-hover"></div>
                     </div>
                 </div>
             </div>
