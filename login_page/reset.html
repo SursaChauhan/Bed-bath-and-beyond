@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" 
     content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Reset Password</title>
     <style>
         *{
     margin: 0;
@@ -89,9 +89,13 @@
   <p>Enter your email address and we will send you link</p>
   <form>
     <input type="text" id="email address" placeholder="Email Address" required><br>
-     <button>
+     <!-- <button>
         Send reset password email
-     </button>
+     </button> -->
+
+     <button id="resetPasswordButton">Send reset password email</button>
+     <div id="resetPasswordMessage" style="display: none;">Sign in email sent to your email</div>
+
   </form>
  </div>
  <p>We care about your security <br>

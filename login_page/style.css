@@ -161,3 +161,44 @@ width: 100%;
     text-align: center;
     margin-top: 10%;
 }
+
+
+@media screen and (max-width: 768px) {
+   
+    #main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #main>.account,
+    #main>.Sign {
+        width: 90%;
+    }
+    #login button{
+        margin: 2%;
+        width: 90%;
+    }
+    #main>.Sign{
+        margin: 8%;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+   
+    .container {
+        margin: 2%;
+    }
+
+    #main>.account,
+    #main>.Sign {
+        width: 100%;
+    }
+    #login button{
+        
+        width: 90%;
+    }
+    #main>.Sign{
+        margin: 8%;
+    }
+} 
