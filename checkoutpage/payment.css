@@ -33,15 +33,17 @@ margin: 2% auto auto auto;
   display: flex;
   flex-direction: row;
   margin-top: 1.5rem;
+  gap: 1rem;
+  justify-content: flex-end;
 }
-.form{
+/* .form{
     width: 65%;
-}
+} */
 
 #formsubmit{
-width: 65%;
-margin: auto;
-border: 2px solid red;
+width: 60%;
+margin:0.8rem auto auto auto;
+/* border: 2px solid red; */
 }
 
 /* #firstname{
@@ -53,7 +55,7 @@ border: 2px solid red;
     position: relative;
     margin-bottom: 20px;
     width: 100%;
-    background-color: yellow;
+    /* background-color: yellow; */
   }
   
 
@@ -100,7 +102,7 @@ border: 2px solid red;
   .form-group1 {
     position: relative;
     margin-bottom: 20px;
-    
+    margin-top: 1rem;
   }
 
 
@@ -152,7 +154,7 @@ border: 2px solid red;
    
     display: flex;
     justify-content: space-around;
-    background-color: blue;
+    /* background-color: blue; */
   }
   
   .checkbox{
@@ -179,12 +181,60 @@ border: 2px solid red;
   }
 
   #plogo{
-    width: 100%; display: flex; margin-bottom: 1rem; border: 1px solid salmon; justify-content: space-around; padding:  0.7rem 0;
+    width: 100%; display: flex; margin-bottom: 1rem; border: 1px solid rgb(211, 196, 196); justify-content: space-around; padding:  0.9rem 0;
+    border-radius: 5px;
+    cursor: pointer;
   }
+
+  
+
   #plogo>button:nth-child(1){
-    width: 40%; height: 3rem; background-color: yellow;
+    width: 40%; height: 3rem; background-color: rgb(255,196,57);
+    cursor: pointer;
+    border: hidden;
+    border-radius: 5px;
   }
 
   #plogo>button:nth-child(2){
     width: 40%; height: 3rem; 
+    border: hidden;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  #submit{
+    display: flex; justify-content: space-between; gap: .8rem;
+  }
+  #submit>div:nth-child(1){
+    width: 50%;
+  }
+  #submit>div:nth-child(1) button{
+    background-color: blue; color: white; border: hidden; padding:0.5rem 1rem; width: 100%;
+  }
+
+
+  #submit>div:nth-child(2) div{
+    display: flex;
+  }
+
+  .paynow{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: flex-end; */
+    align-items: flex-end;
+  }
+
+  #first1{
+    border: 1px solid gainsboro;
+    padding: 1rem;
+    
+  }
+  #first1>div:nth-child(2){
+    display: flex;
+    gap: 10px;
+    border-radius: 5px;
+  }
+  #first1>div:nth-child(2) button{
+    padding: 1rem;
+    border-radius: 5px;
   }
