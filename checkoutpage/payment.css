@@ -31,7 +31,8 @@ margin: 2% auto auto auto;
     width: 60%;
     margin: auto;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  margin-top: 1.5rem;
 }
 .form{
     width: 65%;
@@ -86,6 +87,9 @@ border: 2px solid red;
     border:none;
   }
 
+  #formsubmit{
+    width: 100%;
+  }
   #formsubmit>div:nth-child(1){
     
     display: flex;
@@ -172,4 +176,15 @@ border: 2px solid red;
     justify-content: flex-start;
     
     display: flex;
+  }
+
+  #plogo{
+    width: 100%; display: flex; margin-bottom: 1rem; border: 1px solid salmon; justify-content: space-around; padding:  0.7rem 0;
+  }
+  #plogo>button:nth-child(1){
+    width: 40%; height: 3rem; background-color: yellow;
+  }
+
+  #plogo>button:nth-child(2){
+    width: 40%; height: 3rem; 
   }
