@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>login page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -18,18 +19,40 @@
      <div> <button>Set a New password</button></div>
     </div>
     <div id="main">
-        <br>
-        <div class="acount">
-            <div>
-                <img src="https://w7.pngwing.com/pngs/184/113/png-transparent-user-profile-computer-icons-profile-heroes-black-silhouette-thumbnail.png" alt="profile logo">
-            </div>
-            <div>
-                <h4>Create Acount </h4>
-            </div>
+        <div class="account" >
+            <i class="fa-solid fa-user"><span>Create Account</span></i>
+           <form>
+            <input type="text" id="email" placeholder="Email" required><br>
+            <input type="text" id="password" placeholder="Password" required><br>
+            <input type="checkbox" id="check">
+            <label for="check">Keep me signed in.</label><br>
+            <button>
+                 Create Account
+            </button>
+           </form>
+           <p>By creating an account, you agree to our <a href="#">Terms & Conditions</a> and <a href="#">Privacy Policy</a>.</p>
+          
         </div>
-        <div class="sign">
-         <h2>hello</h2>
+        <hr>
+        <div class="Sign" >
+            <i class="fa-solid fa-user"><span>Sign in</span></i>
+           <form>
+            <input type="text" id="email" placeholder="Email" required><br>
+            <input type="text" id="password" placeholder="Password" required><br>
+            <input type="checkbox" id="check">
+            <label for="check">Keep me signed in.</label><br>
+            <button>
+                 Sign In
+            </button>
+           </form>
+           <p><a href="#">Forgot your password</a></p>
         </div>
+    </div>
+   
+    <div>
+      <div id="login">
+        <button><img class="img1" src="./image/google.png" alt="logo">Continue with Google</button><br>
+        <button><img class="img2" src="./image/facebook.png" alt="logo">Continue with Facebook</button>
     </div>
 </body>
 </html>
