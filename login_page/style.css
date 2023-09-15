@@ -84,7 +84,7 @@ width: 100%;
     margin-bottom: 8%;
 }
 #check {
-    margin-bottom: 5%;
+    /* margin-bottom: 6%; */
     padding: 1%;
 }
 
@@ -92,6 +92,7 @@ width: 100%;
     padding: 1.7%;
     width: 100%;
     cursor: pointer;
+   /* margin-bott: 5%; */
 }
  
 #main > .account p{
@@ -163,7 +164,7 @@ width: 100%;
 }
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 668px) {
    
     #main {
         flex-direction: column;
@@ -182,6 +183,10 @@ width: 100%;
         margin: 8%;
     }
 
+}
+
+#status{
+   color: blue;
 }
 
 @media screen and (max-width: 480px) {

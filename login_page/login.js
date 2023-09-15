@@ -26,11 +26,16 @@ function signUp(event) {
         }
 
         if (flag) {
-            alert("User already exists!!");
+             alert("User already exists!!");
+            // p.textContent = "User already exist!!"
+            // p.style.color = "red" 
         } else {
+            var p = document.querySelector("#status");
             userDataBase.push(userData);
             localStorage.setItem("userDataBase", JSON.stringify(userDataBase));
-            alert("Signup Successful !! Enter Login Credentials");
+            // alert("Signup Successful !! Enter Login Credentials");
+            p.textContent = "Signup Successful !! Enter Login Credentials";
+            p.style.color = "green"
             document.querySelector(".account #email").value = "";
             document.querySelector(".account #password").value = "";
         }
@@ -54,6 +59,7 @@ function signUp(event) {
 
     let email = document.querySelector(".Sign #email").value;
     let password = document.querySelector(".Sign #password").value;
+    var p = document.querySelector("#Lstatus")
 
     let arr = JSON.parse(localStorage.getItem("userDataBase"));
 
@@ -63,8 +69,10 @@ function signUp(event) {
             arr[i].userPassword === password
         ) {
             flag = true;
-
-            alert("Login Successful!!");
+        
+            // alert("Login Successful!!");
+            p.textContent = "Login Successful!!"
+            p.style.color = "green" 
             setTimeout(() => {
                  window.location.href = "index.html";
             }, 800);
@@ -74,14 +82,16 @@ function signUp(event) {
     }
 
     if (!flag) {
-        alert("Wrong Credentials!!");
+        // alert("Wrong Credentials!!");
+        p.textContent = "Wrong Credentials!!"
+        p.style.color = "red" 
     }
   }
    
  document.getElementById("forgotPasswordLink").addEventListener("click", function(event) {
     event.preventDefault(); 
     window.location.href = "reset.html";
-});
+  });
 
 document.getElementById("continueWithGoogleButton").addEventListener("click", function() {
     var googleAuthUrl = "https://accounts.google.com/o/oauth2/auth?" +
@@ -97,4 +107,4 @@ document.getElementById("resetPasswordButton").addEventListener("click", functio
     var resetPasswordMessage = document.getElementById("resetPasswordMessage");
      resetPasswordMessage.style.display = "reset password";
     
-});
+})
