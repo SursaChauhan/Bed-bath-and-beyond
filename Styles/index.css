@@ -9,7 +9,6 @@ a {
   }
   
   #ship {
-    /* margin: 0px; */
     display: flex;
     gap: 7px;
     padding: 5px;
@@ -51,7 +50,6 @@ a {
     justify-content: space-around;
     align-items: center;
     border-bottom: 1px solid whitesmoke;
-    /* position: fixed; */
   }
   
   
@@ -140,7 +138,6 @@ a {
   }
   
   li {
-    /* display: block; */
     float: left;
     padding: 1rem;
     position: relative;
@@ -289,7 +286,6 @@ a {
     align-items: center;
     height: 50%;
     grid-template-columns: repeat(6, 1fr);
-    /* text-align: center; */
     width: 85%;
     margin: auto;
     gap: 25px;
@@ -483,7 +479,6 @@ a {
   #footerLink button {
     background-color: #1b61a7;
     color: white;
-    /* width: 40%; */
     padding: 17px;
     border: none;
     border-radius: 5px;
@@ -543,10 +538,6 @@ a {
     font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
 }
 
-
-#signup-div{
-    text-align: center;
-}
 #footer-up{
     display: flex;
     background-color: #545658;
