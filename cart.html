@@ -1,11 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cart</title>
+  <!-- <style> -->
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+  <link rel="stylesheet" href="./cart.css" />
+  <link rel="stylesheet" href="./navbarstyle.css">
+  <link rel="stylesheet" href="./footer.css">
+  <!-- </style> -->
+
+  <h2>Shopping Cart</h2>
+  <div id="main">
+  <div class="cart-items" id="cartItems">
+    <!-- Cart items will be dynamically added here -->
+</div>
+<div>
+    <div id="cartCount"></div>
+      <svg style="margin-top: 2.8rem; margin-right: 4rem;"  class="UserDropDowns_icon_06" width="22" height="21" viewBox="0 0 24 24" stroke="#2F3337"
+          fill="#2F3337">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M7.174 14.4L5.208.833C5.14.356 4.697 0 4.174 0h-3.13C.466 0 0 .43 0 .96s.467.96 1.043.96H3.26l1.966 13.567c.07.477.512.833 1.035.833h14.608c.498 0 .926-.323 1.024-.772l2.087-9.6c.113-.52-.254-1.025-.819-1.13-.565-.103-1.115.234-1.228.754L20.014 14.4H7.174zm.13 9.6a2.087 2.087 0 100-4.174 2.087 2.087 0 000 4.174zm14.61-2.087a2.087 2.087 0 11-4.175 0 2.087 2.087 0 014.174 0z"
+              stroke="none" fill="inherit"></path>
+      </svg>
+      
+      <br>
+      <a href="index.html">Cart</a>
+  </div>
+<div id="inner">
+    <div id="mainPrice-cart">
+      <p>Total Items :<span id="total-num">0</span></p>
+      <h5>Total Price : INR <span id="total-price">0</span></h5>
+      <div>
+        <input id="inputC" placeholder="Add a Promo" />
+        <button id="promoC">Apply</button>
+      </div>
+      <button onclick="window.location.href = './checkout.html'  "id="paymentC"><i class="fa-solid fa-lock" ></i>  Check Out</button>
+    </div>
+  </div>
+  </div>
+
+
+
 </body>
+
 </html>
+<script src="./cart.js"> </script>
