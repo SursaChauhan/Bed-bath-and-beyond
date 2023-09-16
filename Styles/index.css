@@ -16,6 +16,11 @@ a {
     align-items: top;
     height: 30px;
   }
+  header{
+    position: sticky;
+    top: 0;
+    background-color: white;
+  }
   
   #ship img {
     width: 28px;
