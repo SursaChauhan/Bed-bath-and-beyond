@@ -51,15 +51,30 @@ margin:0.8rem auto auto auto;
    
 } */
 
+.onediv{
+  width: 100%; justify-content: space-between; gap: 2%;
+}
+
+
 .form-group {
+  display: flex;
     position: relative;
     margin-bottom: 20px;
     width: 100%;
+
     /* background-color: yellow; */
   }
   
 
-  
+  .form-control1{
+    
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    position: relative; /* Add relative positioning */
+    background: transparent; /* Make the input background transparent */
+  }
   .form-control {
     width: 100%;
     padding: 10px;
@@ -72,6 +87,10 @@ margin:0.8rem auto auto auto;
   .form-control:focus {
      border-color:red; /*Change border color when the input is focused */
   }
+
+  .form-control1:focus {
+    border-color:red; /*Change border color when the input is focused */
+ }
   
   label {
     position: absolute;
@@ -89,6 +108,14 @@ margin:0.8rem auto auto auto;
     border:none;
   }
 
+  .form-control1:focus + label,
+  .form-control1:valid + label {
+    bottom: 34px; /* Move label to the border line when focused or has content */
+    font-size: 16px;
+  
+    border:none;
+  }
+
   #formsubmit{
     width: 100%;
   }
@@ -100,26 +127,17 @@ margin:0.8rem auto auto auto;
   
 
   .form-group1 {
+    display: flex;
     position: relative;
-    margin-bottom: 20px;
-    margin-top: 1rem;
+    margin-bottom: 2rem;
+    /* margin-top: 1rem; */
   }
 
 
-  #firstname{
-    margin-left: 2%;
-    width: 85%;
-      padding: 10px;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-      position: relative; /* Add relative positioning */
-      background: transparent; /* Make the input background transparent */
-  
-    }
+
 
   #firstname1{
-  /* padding-left: 97%; */
-  width: 95%;
+ 
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
@@ -158,26 +176,38 @@ margin:0.8rem auto auto auto;
   }
   
   .checkbox{
-    /* align-items: flex-start; */
-    justify-content: flex-start;
-    /* border-top: 1px solid #dadcdf; */
+   
     color: #626669;
     cursor: pointer;
     display: flex;
     font-size: 14px;
     justify-content: flex-start;
     line-height: 21px;
-    margin: 16px auto auto;
+    margin: 0 auto 0.7rem 0;
     padding: 16px 0 0;
     position: relative;
-    width: 65%;
+   font-size: 16px;
 
   }
 
   #img{
-    justify-content: flex-start;
-    
     display: flex;
+    justify-content: flex-start;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  
+  #img >img{
+   border: 1px solid gray;
+   width: 2rem;
+   padding: 2px 4px;
+  }
+
+  #details>div>span{
+    justify-content: center;
+    display: flex;
+    font-size: 17px
   }
 
   #plogo{
@@ -189,17 +219,17 @@ margin:0.8rem auto auto auto;
   
 
   #plogo>button:nth-child(1){
-    width: 40%; height: 3rem; background-color: rgb(255,196,57);
+    width: 45%; height: 2.5rem; background-color: rgb(255,196,57);
     cursor: pointer;
     border: hidden;
     border-radius: 5px;
   }
 
   #plogo>button:nth-child(2){
-    width: 40%; height: 3rem; 
+    width: 45%; height: 2.5rem; 
     border: hidden;
     border-radius: 5px;
-    cursor: pointer;
+   
   }
 
   #submit{
@@ -207,17 +237,27 @@ margin:0.8rem auto auto auto;
   }
   #submit>div:nth-child(1){
     width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   #submit>div:nth-child(1) button{
-    background-color: blue; color: white; border: hidden; padding:0.5rem 1rem; width: 100%;
+    background-color: blue; color: white; border: hidden; padding:0.9rem 1rem; width: 90%;
+    border-radius: 5px;
+    font-size: 16px;
   }
 
 
   #submit>div:nth-child(2) div{
     display: flex;
+    justify-content: space-between;
+  }
+  #submit>div:nth-child(2) div>p{
+    font-size: 14px;
   }
 
   .paynow{
+    width: 40%;
     display: flex;
     flex-direction: column;
     /* justify-content: flex-end; */
@@ -227,14 +267,66 @@ margin:0.8rem auto auto auto;
   #first1{
     border: 1px solid gainsboro;
     padding: 1rem;
+    margin-top: 1.2rem;
     
+  }
+  #first1>div:nth-child(1){
+   margin-bottom: 1%;
   }
   #first1>div:nth-child(2){
     display: flex;
     gap: 10px;
     border-radius: 5px;
+   
   }
-  #first1>div:nth-child(2) button{
-    padding: 1rem;
+
+  #first1>div:nth-child(2) input{
+    padding: 0.8rem;
     border-radius: 5px;
+    font-size: 14px;
   }
+
+  #first1>div:nth-child(2) button{
+    padding: 1rem 1.5rem;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+
+  .checklabel{
+    position: relative;
+    bottom: 0;
+margin-left: 10px;
+  }
+  .form-group2{
+    display: flex;
+    position: relative;
+    margin-bottom: 0.9rem;
+  }
+
+  #Credit{
+    background-color: #f2f2f2;
+    width: 76%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0.6rem;
+
+  }
+
+  #subtotal{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    justify-content: center;
+  }
+
+  #subtotal >div{
+    display: flex;
+    width: 95%;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+  }
+.hrclass{
+  width: 100%;
+}

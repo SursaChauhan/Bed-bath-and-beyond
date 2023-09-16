@@ -15,12 +15,12 @@
     </div>
 </div>
 
-<div style="width: 60%; margin: auto;">
+<!-- <div style="width: 60%; margin: auto;">
   <hr>
-  <div style="display: flex; justify-content: flex-end;">
-    <a href="">already have an account? sign in </a>
+  <div style="display: flex; justify-content: flex-end; text-decoration: none;">
+    <a href="" style="text-decoration: none;">Already have an account? Sign in </a>
   </div>
-</div>
+</div> -->
 
 
 <div id="details" >
@@ -30,13 +30,13 @@
  
  
  
-  <div style="width: 70%;"> 
+  <div style="width: 60%;"> 
 
 <span>Express Checkout</span>
 <div id="plogo">
-  <button ><img src="https://1000logos.net/wp-content/uploads/2021/04/Paypal-logo.png" alt="" style="width: 90%;  height: 100%;"> </button>
-<span>Or</span>
-  <button style="width: 40%; height: 3rem;"><img src="https://images.secretlab.co/theme/common/logo_paypalcredit.png" alt=""  style="width: 90%; height: 100%;"> </button>
+  <button ><img src="https://1000logos.net/wp-content/uploads/2021/04/Paypal-logo.png" alt="" style="width: 60%;  height: 80%;"> </button>
+
+  <button ><img src="https://images.secretlab.co/theme/common/logo_paypalcredit.png" alt=""  style="width: 60%; height: 80%;"> </button>
 </div>
 <hr>
 
@@ -44,14 +44,14 @@
 
        
           <div class="form-group1">
-              <input type="text" id="firstname1" class="form-control" required>
+              <input type="email" id="firstname1" class="form-control1" required>
               <label for="firstname1">Email Address  (We'll send order info here)</label>
             </div>
             
           
       
 
-       <div > 
+       <div class="onediv"> 
         <div class="form-group">
             <input type="text" id="firstname" class="form-control" required>
             <label for="firstname">First Name</label>
@@ -65,13 +65,11 @@
 
    
         <div class="form-group1">
-            <input type="text" id="firstname1" class="form-control"  required>
+            <input type="text" id="firstname1" class="form-control1"  required>
             <label for="firstname1">Address Line 1</label>
           </div>
-          
         
-    
-    <div> 
+    <div class="onediv"> 
         <div class="form-group">
             <input type="text" id="firstname" class="form-control" required>
             <label for="firstname">Address Line 2(Optional)</label>
@@ -84,13 +82,13 @@
                 <option value="">House/Appartment</option>
                 <option value="">Po Box</option>
             </select>
-            <label for="firstname">Address Type</label>
+            <label for="firstname"  style="top:-18px;">Address Type</label>
           </div>
         
     </div>
 
 
-    <div> 
+    <div class="onediv"> 
         <div class="form-group">
             <input type="text" id="firstname" class="form-control" required>
             <label for="firstname">City</label>
@@ -108,93 +106,98 @@
                 <option value="">Calcutta</option>
                 <option value="">Benguluru</option>
             </select>
-            <label for="firstname">Address Type</label>
+            <label for="firstname" style="top:-18px;">State</label>
           </div>
         
     </div>
 
-    <div> 
+    <div class="onediv"> 
         <div class="form-group">
             <input type="text" id="firstname" class="form-control" required>
             <label for="firstname">Zip Code</label>
           </div>
           <div class="form-group">
-            <input type="text" id="firstname" class="form-control" required>
+            <input type="number" id="firstname" class="form-control" required="Mobile is required">
             <label for="firstname">Mobile Phone</label>
           </div>
         
     </div>
 
+    <div class="checkbox">
+      <input type="checkbox" name="sms" id="check" value="on" >
+      <label for="check" class="checklabel">Use shipping address for billing</label>
+            </div>
+      <hr>
       
-      </form>
-
       <div class="checkbox">
-<input type="checkbox" name="sms" id="check" value="on" >
-<label for="check" style="position: relative;">Use shipping address for billing</label>
-      </div>
-<hr>
+        <input type="checkbox" name="sms" id="check" value="on" >
+        <label for="check"  class="checklabel">Receive text updates about your order</label>
+              </div>  
+              <hr>
+  
 
-<div class="checkbox">
-  <input type="checkbox" name="sms" id="check" value="on" >
-  <label for="check" style="position: relative;">Receive text updates about your order.</label>
-        </div>
-
-        <div id="paymentoption" style="width: 65%;">
-          <h3>Payment Options</h3>
-          <div class="checkbox">
-            <input type="checkbox" name="sms" id="check" value="on" >
-            <label for="check" style="position: relative;">Credit / Debit / Overstock Card</label>
-                  </div>
-
-                  <div id="img">
-                    <img src="https://www.freepnglogos.com/uploads/visa-card-logo-9.png" alt="" style="width: 2rem;">
-                    <img src="https://www.pngplay.com/wp-content/uploads/12/Visa-Card-Logo-No-Background.png" alt="" style="width: 2rem;">
-                    <img src="https://www.transparentpng.com/thumb/atm-card/r05cSo-picture-credit-card-your-bank-atm-card-dowland.png" alt="" style="width: 2rem;">
-                    <img src="https://www.pngall.com/wp-content/uploads/2016/05/ATM-Card-Download-PNG.png" alt="" style="width: 2rem;">
-                  </div>
-
-                  <div class="form-group1">
-                    <input type="text" id="firstname1" class="form-control" required>
-                    <label for="firstname1">Card Number</label>
-                  </div>
-
-                  <div style="display: flex; gap: 10px;">
-                    <div class="form-group1">
-                      <input type="text" id="firstname1" class="form-control" required>
-                      <label for="firstname1">Exp Month </label>
-                    </div>
-
-                    <div class="form-group1">
-                      <input type="text" id="firstname1" class="form-control" required>
-                      <label for="firstname1">Exp Year</label>
-                    </div>
-                    <div class="form-group1">
-                      <input type="text" id="firstname1" class="form-control" required>
-                      <label for="firstname1">CVV </label>
-                    </div>
-
-                 
-
-                  </div>
-                  <div class="checkbox">
-                    <input type="checkbox" name="sms" id="check" value="on" >
-
-                    <label for="check" style="position: relative;"> <img src="https://hostbillapp.com/appstore/payment_paypal/images/thumbnails/m_logo.png" alt="" style="width: 4rem;"> </label>
-
-                    <label for="check" style="position: relative;"> <img src="https://www.ppro.com/wp-content/uploads/2021/06/paypal-credit.png" alt="" style="width: 4rem;"> </label>
-                  
+              <div id="paymentoption" style="width: 65%;">
+                <h3>Payment Options</h3>
+                <div class="checkbox">
+                  <input type="checkbox" name="sms" id="check" value="on" >
+                  <label for="check"  class="checklabel">Credit / Debit / Overstock Card</label>
+                        </div>
+      
+                        <div id="img">
+                          <img src="https://www.freepnglogos.com/uploads/visa-card-logo-9.png" alt="" >
+                          <img src="https://www.pngplay.com/wp-content/uploads/12/Visa-Card-Logo-No-Background.png" alt="" >
+                          <img src="https://www.transparentpng.com/thumb/atm-card/r05cSo-picture-credit-card-your-bank-atm-card-dowland.png" alt="" style="width: 2rem;">
+                          <img src="https://www.pngall.com/wp-content/uploads/2016/05/ATM-Card-Download-PNG.png" alt="" >
+                        </div>
+      
+                       
+      
+                        <div style="border: 1px  solid gray; padding: 0.9rem 0.7rem 0.9rem 0.7rem; ">
+                          <div class="form-group2" style="padding-top: 10px;">
+                            <input type="text" id="firstname1" class="form-control" required>
+                            <label for="firstname1">Card Number</label>
                           </div>
+                         
+                         <div style="display: flex; gap: 10px;">
+                          <div class="form-group2">
+                            <input type="text" id="firstname1" class="form-control" required>
+                            <label for="firstname1">Exp Month </label>
+                          </div>
+      
+                          <div class="form-group2">
+                            <input type="text" id="firstname1" class="form-control" required>
+                            <label for="firstname1">Exp Year</label>
+                          </div>
+                          <div class="form-group2">
+                            <input type="text" id="firstname1" class="form-control" required>
+                            <label for="firstname1">CVV </label>
+                          </div>
+                        </div>
+                       
+      
+                        </div>
+                        <div class="checkbox">
+                          <input type="checkbox" name="sms" id="check" value="on" >
+      
+                          <label for="check"  class="checklabel"> <img src="https://hostbillapp.com/appstore/payment_paypal/images/thumbnails/m_logo.png" alt="" style="width: 4rem;"> </label>
+      
+                          <label for="check"  class="checklabel"> <img src="https://www.ppro.com/wp-content/uploads/2021/06/paypal-credit.png" alt="" style="width: 4rem;"> </label>
+                        
+                                </div>
+      
+                                <div class="checkbox">
+                                  <input type="checkbox" name="sms" id="check" value="on" >
+                                  <label for="check"  class="checklabel">Use an Overstock Gift Card</label>
+                                        </div>
+              </div>
+  </form>
 
-                          <div class="checkbox">
-                            <input type="checkbox" name="sms" id="check" value="on" >
-                            <label for="check" style="position: relative;">Use an Overstock Gift Card</label>
-                                  </div>
-        </div>
+      
+
+       
 
 <hr>
-<div id="product-render">render product here</div>
 
-<hr>
 
 <div id="submit">
 
@@ -204,7 +207,7 @@
 <div >
   <h5 style="margin: 0;">This Order Ships Free!</h5>
 
-  <span id="total">total</span></div>
+  <span id="total">Total: 12200$</span></div>
 <p style="margin: 0;">By submitting your order, you agree to our terms and conditions.</p>
 </div>
 </div>
@@ -218,8 +221,19 @@
           <div>Add a Promo Code</div>
           <div>
             <input type="text" name="" id="" placeholder="Enter A Promo Code">
-            <button>Apply</button>
+            <button id="promoC">Apply</button>
           </div>
+        </div>
+
+        <div id="subtotal">
+
+        </div>
+
+        <div id="Credit">
+
+          <img src="https://img.freepik.com/premium-vector/vector-red-credit-card-mockup-isolated-white-background-realistic-payment-card_567896-200.jpg?w=900" alt="" style="width: 4rem;">
+          <h4>5% back in rewards + Special Financing with an Overstock Credit Card</h4>
+          
         </div>
 
         </div>
