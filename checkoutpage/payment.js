@@ -1,3 +1,22 @@
+var cartdata =[]
+
+    var formobj={
+totalitems:120,
+totalprice:12480,
+discountprice:1240,
+    }
+
+cartdata.push(formobj)
+localStorage.setItem("cartdata",JSON.stringify(cartdata))
+
+ cartdata = JSON.parse(localStorage.getItem("cartdata"));
+
+cartdata.forEach(function(ele){
+ var one= ele.totalitems
+ console.log(one)
+
+})
+console.log(cartdata);
 var totalprice=[12480]
 
 var totalitems=[120]
@@ -14,7 +33,7 @@ var discountprice=[1240]
 
 var subtotal =document.getElementById("subtotal");
 
-const newprice =totalprice -discountprice
+const newprice = cartdata.totalprice -discountprice
 
 var div3= document.createElement("div");
 const span2 = document.createElement('p');
@@ -89,6 +108,15 @@ iconElement.classList.add("lock");
 iconElement.style.width="2rem"
 div7.style.backgroundColor="#46a1e3"
 
+div7.addEventListener("click",function(event){
+    window.location.href="./otp.html"
+})
+
+var submitorder=document.getElementById("submitorder")
+submitorder.style.cursor="pointer"
+submitorder.addEventListener("click",function(event){
+    window.location.href="./otp.html"
+})
 
 const lockElement = document.createElement('p');
 lockElement.textContent = `CheckOut `;
