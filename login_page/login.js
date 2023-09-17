@@ -52,9 +52,9 @@ function signUp(event) {
     window.location.href = "reset.html";
    });
    // Function for user login
-  document.querySelector(".Sign form").addEventListener("submit", logIn);
+    document.querySelector(".Sign form").addEventListener("submit", logIn);
 
-  function logIn(event) {
+   function logIn(event) {
     event.preventDefault();
 
     let email = document.querySelector(".Sign #email").value;
@@ -102,9 +102,33 @@ document.getElementById("continueWithGoogleButton").addEventListener("click", fu
     window.open(googleAuthUrl, "GoogleOAuth", "width=600,height=400");
 });
 
-document.getElementById("resetPasswordButton").addEventListener("click", function() {
+// document.getElementById("resetPasswordButton").addEventListener("click", function() {
    
-    var resetPasswordMessage = document.getElementById("resetPasswordMessage");
-     resetPasswordMessage.style.display = "reset password";
+//     var resetPasswordMessage = document.getElementById("resetPasswordMessage");
+//      resetPasswordMessage.style.display = "reset password";
     
-})
+// })
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    
+    // var btn = document.getElementById("btn");
+    var cross = document.getElementById("cross");
+    var loginPage = document.getElementById("login_page");
+  
+    // btn.addEventListener("click", function() {
+    //   // Show the "login_page" element
+    //   document.body.style.width = "60%";
+    // });
+  
+    cross.addEventListener("click", function() {
+       loginPage.style.display = "none";
+    //    loginPage.parentNode.remove();
+     window.location.href = "index.html";
+    });
+  });
+  
+ 
+
+
+  

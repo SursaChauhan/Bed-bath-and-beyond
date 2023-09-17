@@ -7,13 +7,32 @@
     border: 1 px solid black; */
 }
 body{
+    width: 100%;
+    background-image: url(./image/screen.png.png);
+}
+#cross{
+/* border: 1px solid red; */
+margin-bottom: 2%;
+margin-left: 100%;
+cursor: pointer;
+}
+/* body{
     margin: 5%;
-    /* border: 1px solid black; */
+    border: 1px solid black;
     
+} */
+#login_page{
+    /* margin: 3% 5%; */
+    margin: auto;
+    width: 60%;
+    padding: 1% 3%;
+    background-color: white;
+    border-radius: 3px;
+    /* border: 1px solid black;  */
 }
 .container{
   
-  height: 240px;
+  height: 210px;
   /* border: 1px solid red; */
   background-color: rgb(237, 236, 236);
    
@@ -32,7 +51,7 @@ body{
    
 .container>div button {
    text-align: center;
-   padding: 1.3% 4%;
+   padding: 1.5% 4%;
    border: none;
    color: white;
    border-radius: 5px;
@@ -77,10 +96,11 @@ width: 100%;
     margin-bottom: 2.5%;
     
 } */
+
 #email,
 #password {
     width: 100%;
-    padding: 1.7%;
+    padding: 2%;
     margin-bottom: 8%;
 }
 #check {
@@ -89,10 +109,19 @@ width: 100%;
 }
 
 #main > .account button{
-    padding: 1.7%;
+    padding: 3%;
     width: 100%;
     cursor: pointer;
+    background-color:  rgb(20, 117, 227); ;
+    border: none;
+    color: rgb(255, 255, 255);
+    border-radius: 3px;   
+    
    /* margin-bott: 5%; */
+}
+
+#main > .account button:hover{
+    background-color: #0056b3
 }
  
 #main > .account p{
@@ -115,7 +144,7 @@ width: 100%;
     font-weight: 200;
 }
 #main > .Sign button{
-    padding: 2.3%;
+    padding: 3.1%;
     width: 100%;
     background-color:  rgb(20, 117, 227); ;
     border: none;
@@ -152,7 +181,7 @@ width: 100%;
     justify-content: center;
     width: 40%;
     /* background-color: white; */
-    /* border-radius: 3px; */
+     /* border-radius: 3px;  */
 }
 #login{
     /* border: 1px solid red; */
