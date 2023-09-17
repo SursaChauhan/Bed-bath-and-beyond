@@ -7,7 +7,11 @@ a {
     border-bottom: 1px solid #dadcdf;
     margin: 1px;
   }
-  
+  header{
+    position: sticky;
+    top: 0;
+    background-color: white;
+  }
   #ship {
     display: flex;
     gap: 7px;
@@ -16,11 +20,7 @@ a {
     align-items: top;
     height: 30px;
   }
-  header{
-    position: sticky;
-    top: 0;
-    background-color: white;
-  }
+  
   
   #ship img {
     width: 28px;
@@ -60,7 +60,7 @@ a {
   
   input {
     width: 100%;
-    height: 30px;
+    height: 28px;
     background-color: whitesmoke;
     border: 1px solid whitesmoke;
   }
@@ -68,14 +68,14 @@ a {
   #navbarstart > div:nth-of-type(1) {
     display: flex;
     border: none;
-    border-top-right-radius: 4px;
-    border-end-end-radius: 4px;
-    width: 60%;
-    height: 30px;
+    border-radius: 4px;
+    width: 70%;
+    height: 20px;
   }
   #navbarstart div {
     display: block;
   }
+  
   #navbarSearchBtn {
     width: 40px;
     height: 32px;
@@ -86,15 +86,18 @@ a {
     border-end-end-radius: 4px;
   }
   
+  
   p {
     margin-top: 0px;
     font-size: 14px;
   }
-  
-  #navbar > div:nth-of-type(2) {
-    /* border: 1px solid; */
-    text-align: center;
-    /* width: 40px; */
+  #navbarstart > #menu{
+    display: none;
+  }
+  #navbarstart > div + div{
+    height: 20px;
+    font-size: 14px;
+    margin-right: 1%;
   }
   
   .iconsvg {
@@ -169,6 +172,17 @@ a {
     left: 0;
     display: none;
   }
+  #navbarstart #menu div{
+    background-color: #f9fafb;
+    visibility: hidden;
+    opacity: 1;
+    min-width: 15rem;
+    position: absolute;
+    transition: all 60s ease;
+    margin-top: 1rem;
+    left: 0;
+    /* display: none; */
+  }
   
   ul li:hover > ul,
   ul li ul:hover {
@@ -204,7 +218,7 @@ a {
   #divCheckout img {
     width: 23px;
   }
-  #cartCount {
+  /* #cartCount {
     width: 12px;
     margin-top: 12px;
     padding-left: 12px;
@@ -214,19 +228,12 @@ a {
     font-size: 14px;
     font-weight: 700;
     color: #c7202c;
-  }
+  } */
   .UserDropDowns_icon_08 {
-    margin-left: 20px;
+    margin-left: 15px;
   }
   
-  @media screen and (max-width: 970px) {
-    #navbaritems {
-      display: none;
-    }
-    #navbarstart > a {
-      width: 100%;
-    }
-  }
+  
 
 /* body */
 #mid {
@@ -450,94 +457,8 @@ a {
     background-color: #f5f6f7;
     color: rgb(83, 82, 82);
   }
-  #footerLink {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 5px;
-    padding: 3%;
-    background-color: #f5f6f7;
-    margin-top: 30px;
-  }
-  #footerLink > div > img {
-    width: 50%;
-  }
-  #footerLink div:nth-child(2) {
-    display: flex;
-    flex-direction: column;
-  }
-  #footerLink div:nth-child(2) span:first-child {
-    margin: 4%;
-    font-size: large;
-  }
-  #footerLink div:nth-child(3) {
-    display: flex;
-    gap: 5px;
-    margin-left: 5%;
-    align-items: center;
-  }
-  
-  #footerLink input {
-    background-color: white;
-    padding: 10px;
-  }
-  #footerLink button {
-    background-color: #1b61a7;
-    color: white;
-    padding: 17px;
-    border: none;
-    border-radius: 5px;
-    width: 70%;
-    text-align: center;
-    height: 100%;
-  }
-  @media screen and (width<1200px) {
-    #midPart1 h2 {
-      font-size: 1.5rem;
-    }
-  }
-  @media screen and (width<900px) {
-    #midPart1 > h1 + div {
-      grid-template-columns: repeat(3, 1fr);
-    }
-    #midPart2 > h1 + div {
-      grid-template-columns: repeat(4, 1fr);
-    }
-    #midPart4 > h1 + #card3 {
-      grid-template-columns: repeat(2, 1fr);
-    }
-  }
-  
-  @media screen and (width<750px) {
-    #Style > h1 + #card5 {
-      grid-template-columns: repeat(1, 1fr);
-    }
-    #search > h1 + #search1 {
-      grid-template-columns: repeat(2, 1fr);
-    }
-    #midPart1 > h1 {
-      font-size: 30px;
-    }
-    #midPart1 h2 {
-      font-size: 1.2rem;
-    }
-  
-    #midPart1 h2 + p {
-      font-size: 1rem;
-    }
-    #midPart2 > h1 {
-      font-size: 30px;
-    }
-  
-    #fBrands > h1 + #card4 {
-      grid-template-columns: repeat(2, 1fr);
-    }
-    #midPart2 > h1 + div {
-      grid-template-columns: repeat(3, 1fr);
-    }
-  }
-  
-/* footer */
+ 
+  /* footer */
 
 *{
     font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
@@ -582,4 +503,139 @@ footer a{
 }
 #legal-left>p{
     margin: 0;
+}
+  @media screen and (width<1200px) {
+    #midPart1 h2 {
+      font-size: 1.5rem;
+    }
+  }
+  @media screen and (width<900px) {
+    #midPart1 > h1 + div {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    #midPart2 > h1 + div {
+      grid-template-columns: repeat(4, 1fr);
+    }
+    #midPart4 > h1 + #card3 {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media screen and (width<750px) {
+    #Style > h1 + #card5 {
+      grid-template-columns: repeat(1, 1fr);
+    }
+    #search > h1 + #search1 {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    #midPart1 > h1 {
+      font-size: 30px;
+    }
+    #midPart1 h2 {
+      font-size: 1.2rem;
+    }
+  
+    #midPart1 h2 + p {
+      font-size: 1rem;
+    }
+    #midPart2 > h1 {
+      font-size: 30px;
+    }
+  
+    #fBrands > h1 + #card4 {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    #midPart2 > h1 + div {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    #navbarstart .icons{
+        display: none;
+    }
+    #navbarstart #menu{
+        display: inline;
+    }
+    
+    
+  }
+  @media screen and (max-width: 970px) {
+    #navbaritems {
+      display: none;
+    }
+    #navbarstart > a {
+      width: 100%;
+    }
+    
+  }
+  /* Image Slider CSS */
+.slider {
+  width: 100%;
+  /* height: 500px; */
+  overflow: hidden;
+  margin-top: 70px;
+}
+
+.slides {
+  width: 500%;
+  height: 500px;
+  display: flex;
+}
+
+.slides input {
+  display: none;
+}
+
+.slide {
+  width: 20%;
+  transition: 2s;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/css for manual slide navigation/
+
+.navigation-manual {
+  position: absolute;
+  width: 100%;
+  margin-top: -25px;
+  display: flex;
+  justify-content: center;
+}
+
+.manual-btn {
+  padding: 3.9px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.manual-btn:not(:last-child) {
+  margin-right: 10px;
+}
+
+.manual-btn:hover {
+  background: gray;
+}
+
+#radio1:checked~.first {
+  margin-left: 0;
+}
+
+#radio2:checked~.first {
+  margin-left: -20%;
+}
+
+#radio3:checked~.first {
+  margin-left: -40%;
+}
+
+#radio4:checked~.first {
+  margin-left: -60%;
+}
+
+#radio5:checked~.first {
+  margin-left: -80%;
 }
