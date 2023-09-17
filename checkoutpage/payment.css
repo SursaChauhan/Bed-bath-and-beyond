@@ -37,6 +37,10 @@ margin: 2% auto auto auto;
   gap: 1rem;
   justify-content: flex-end;
 }
+
+#details>div:nth-child(1){
+  width: 60%;
+}
 /* .form{
     width: 65%;
 } */
@@ -267,29 +271,40 @@ top:2rem;
   }
 
   #first1{
+    width: 92%;
     border: 1px solid gainsboro;
-    padding: 1rem;
+    padding: 1rem 0.2rem;
     margin-top: 1.2rem;
     margin-bottom: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center
   }
   #first1>div:nth-child(1){
-   margin-bottom: 1%;
+   display: flex;
+    margin-bottom: 1%;
   }
   #first1>div:nth-child(2){
+   width: 100%;
+   
     display: flex;
+    /* justify-content: space-around; */
+    justify-content: center;
+    margin: auto;
     gap: 10px;
     border-radius: 5px;
    
   }
 
   #first1>div:nth-child(2) input{
-    padding: 0.8rem;
+    /* padding: 0.8rem; */
     border-radius: 5px;
     font-size: 14px;
   }
 
-  #first1>div:nth-child(2) button{
-    padding: 1rem 1.5rem;
+  #first1>div:nth-child(2) button {
+    padding: 0.6rem;
     border-radius: 5px;
     font-size: 14px;
   }
@@ -341,3 +356,45 @@ margin-left: 10px;
 .hrclass{
   width: 94%;
 }
+
+/* media queries */
+
+@media screen and (max-width: 767px) {
+
+  #submit{
+    display: none;
+  }
+  #details{
+    width: 100%;
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+  }
+  #details>div:nth-child(1){
+    width: 95%;
+    margin: auto;
+  }
+  
+  #details>div:nth-child(2){
+    width: 95%;
+    margin: auto;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  #submit{
+    display: none;
+  }
+  #details{
+    width: 100%;
+ 
+  }
+  #details>div:nth-child(1){
+    width: 100%;
+  }
+  
+  #details>div:nth-child(2){
+    width: 100%;
+  }
+}
+

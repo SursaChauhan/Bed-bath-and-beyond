@@ -11,64 +11,46 @@ localStorage.setItem("cartdata",JSON.stringify(cartdata))
 
  cartdata = JSON.parse(localStorage.getItem("cartdata"));
 
+
+ var div1= document.createElement("div");
+ var div2= document.createElement("div");
+ var div3= document.createElement("div");
+ var div4= document.createElement("div");
+ var div5= document.createElement("div");
+ var div6= document.createElement("div");
+ var div7 =document.createElement("div");
+
+
 cartdata.forEach(function(ele){
  var one= ele.totalitems
  console.log(one)
 
-})
-console.log(cartdata);
-var totalprice=[12480]
-
-var totalitems=[120]
-var discountprice=[1240]
-// localStorage.setItem("totalPrice", totalPrice);
-
-// Update total price and total quantity in the HTML
-// var totalNumElement = document.getElementById("total-num");
-// totalNumElement.textContent = totalQuantity;
-
-// var totalPriceElement = document.getElementById("total-price");
-// totalPriceElement.textContent = totalPrice.toFixed(2); // Format to 2 decimal places
+ 
+const span = document.createElement('p');
+span.textContent = '$'+ ele.totalprice;
+const totalitemsElement = document.createElement('p');
+totalitemsElement.textContent = ` ${one} (Items):`;
+div1.append(totalitemsElement,(span))
 
 
-var subtotal =document.getElementById("subtotal");
 
-const newprice = cartdata.totalprice -discountprice
+const span1 = document.createElement('p');
+span1.textContent = '$'+ ele.discountprice;
 
-var div3= document.createElement("div");
+const discountpriceElement = document.createElement('p');
+discountpriceElement.textContent = `Discount Price: `;
+div2.append(discountpriceElement,(span1))
+
+const newprice = ele.totalprice - ele.discountprice
+
 const span2 = document.createElement('p');
-span2.textContent = newprice;
+span2.textContent ='$'+ newprice;
 
 const totalpriceElement = document.createElement('p');
 totalpriceElement.textContent = `Subtotal: `;
 div3.append(totalpriceElement,(span2))
 
 
-// var div1= document.createElement("div");
-// const span = document.createElement('h3');
-// span.textContent = totalprice;
-
-var div2= document.createElement("div");
-const span1 = document.createElement('p');
-span1.textContent = discountprice;
-
-const discountpriceElement = document.createElement('p');
-discountpriceElement.textContent = `Discount Price: `;
-div2.append(discountpriceElement,(span1))
-
-var div1= document.createElement("div");
-const span = document.createElement('p');
-span.textContent = totalprice;
-
-
-const totalitemsElement = document.createElement('p');
-totalitemsElement.textContent = ` ${totalitems} (Items):`;
-div1.append(totalitemsElement,(span))
-
-
-
-
-var div4= document.createElement("div");
 const span3 = document.createElement('p');
 span3.textContent =` Free` ;
 
@@ -76,31 +58,23 @@ const totalship = document.createElement('p');
 totalship.textContent = `Shipping:`;
 div4.append(totalship,(span3))
 
-
-
-const totaltaxprice= [2114.30]
-var div5= document.createElement("div");
+const totaltaxprice= `${2114.30}`
 const span4 = document.createElement('p');
-span4.textContent =parseFloat(totaltaxprice );
+span4.textContent ='$'+ parseFloat(totaltaxprice );
 
 const totaltax = document.createElement('p');
 totaltax.textContent = `Estimated Tax: `;
 div5.append(totaltax,(span4))
 
 
-
 const buyprice =parseFloat(newprice) +parseFloat (totaltaxprice)
-
-
-var div6= document.createElement("div");
 const span5 = document.createElement('p');
-span5.textContent =parseFloat(buyprice);
+span5.textContent ='$'+ parseFloat(buyprice);
 
 const buypriceElement = document.createElement('p');
 buypriceElement.textContent = `Your Total: `;
 div6.append(buypriceElement,(span5))
 
-var div7 =document.createElement("div");
 
 const iconElement = document.createElement("img");
 iconElement.setAttribute("src","https://icon-library.com/images/lock-icon/lock-icon-8.jpg")
@@ -111,15 +85,8 @@ div7.style.backgroundColor="#46a1e3"
 div7.addEventListener("click",function(event){
     window.location.href="./otp.html"
 })
-
-var submitorder=document.getElementById("submitorder")
-submitorder.style.cursor="pointer"
-submitorder.addEventListener("click",function(event){
-    window.location.href="./otp.html"
-})
-
 const lockElement = document.createElement('p');
-lockElement.textContent = `CheckOut `;
+lockElement.textContent = `Submit Order`;
 
 div7.append(iconElement,lockElement)
 div7.style.display="flex"
@@ -127,6 +94,25 @@ div7.style.justifyContent="center"
 div7.style.gap="16px"
 div7.style.color="white"
 div7.style.borderRadius="5px"
+
+var total =document.getElementById("total")
+total.textContent=ele.totalprice
+
+})
+
+
+
+
+// var subtotal =document.getElementById("subtotal");
+
+
+var submitorder=document.getElementById("submitorder")
+submitorder.style.cursor="pointer"
+submitorder.addEventListener("click",function(event){
+    window.location.href="./otp.html"
+})
+
+
 
 var div8 =document.createElement("p")
 div8.textContent=`This Order Ships Free!`
