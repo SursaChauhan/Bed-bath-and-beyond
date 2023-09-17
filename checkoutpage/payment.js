@@ -115,11 +115,12 @@ div7.addEventListener("click",function(event){
 var submitorder=document.getElementById("submitorder")
 submitorder.style.cursor="pointer"
 submitorder.addEventListener("click",function(event){
+    
     window.location.href="./otp.html"
 })
 
 const lockElement = document.createElement('p');
-lockElement.textContent = `CheckOut `;
+lockElement.textContent = `Checkout `;
 
 div7.append(iconElement,lockElement)
 div7.style.display="flex"
