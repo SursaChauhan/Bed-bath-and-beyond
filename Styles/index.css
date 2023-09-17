@@ -157,7 +157,10 @@ a {
     color: black;
   }
   
-  li:hover {
+  li:hover,
+  #navbarstart #menu,
+  #navbarstart #navbarSearchBtn,
+  #navbarstart .icons {
     cursor: pointer;
   }
   
@@ -172,17 +175,31 @@ a {
     left: 0;
     display: none;
   }
-  #navbarstart #menu div{
+  
+  #navbarstart #menu ul {
     background-color: #f9fafb;
     visibility: hidden;
-    opacity: 1;
-    min-width: 15rem;
+    opacity: 0;
+    min-width: 5rem;
     position: absolute;
     transition: all 60s ease;
-    margin-top: 1rem;
-    left: 0;
-    /* display: none; */
+    /* margin-top: 0.2rem; */
+    right: 0;
+    display: none;
   }
+  #navbarstart #menu:hover > ul,
+  #navbarstart #menu ul:hover{
+    visibility: visible;
+    opacity: 1;
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid #2f3337; */
+  }
+  #navbarstart #menu ul li:hover {
+    cursor: pointer;
+  }
+  
+  
   
   ul li:hover > ul,
   ul li ul:hover {
@@ -218,7 +235,7 @@ a {
   #divCheckout img {
     width: 23px;
   }
-  /* #cartCount {
+  #cartCount {
     width: 12px;
     margin-top: 12px;
     padding-left: 12px;
@@ -228,7 +245,7 @@ a {
     font-size: 14px;
     font-weight: 700;
     color: #c7202c;
-  } */
+  }
   .UserDropDowns_icon_08 {
     margin-left: 15px;
   }
@@ -457,6 +474,7 @@ a {
     background-color: #f5f6f7;
     color: rgb(83, 82, 82);
   }
+  
  
   /* footer */
 
@@ -504,72 +522,78 @@ footer a{
 #legal-left>p{
     margin: 0;
 }
-  @media screen and (width<1200px) {
-    #midPart1 h2 {
-      font-size: 1.5rem;
-    }
-  }
-  @media screen and (width<900px) {
-    #midPart1 > h1 + div {
-      grid-template-columns: repeat(3, 1fr);
-    }
-    #midPart2 > h1 + div {
-      grid-template-columns: repeat(4, 1fr);
-    }
-    #midPart4 > h1 + #card3 {
-      grid-template-columns: repeat(2, 1fr);
-    }
-  }
+#footerLink {
+  display: flex;
+  justify-content: center;
+  /* border: 1px solid red; */
+  align-items: center;
+  gap: 5px;
+  padding: 3%;
+  background-color: #f5f6f7;
+  margin-top: 30px;
+}
+#footerLink > div > img {
+  width: 50%;
+}
+#footerLink div:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+}
+#footerLink div:nth-child(2) span:nth-child(2){
+  font-size: medium;
+  color: grey;
+  text-align: center;
+}
+#footerLink div:nth-child(2) span:nth-child(3){
+  font-size: small;
+  color: grey;
+  text-align: center;
+}
+#footerLink div:nth-child(2) span:nth-child(3) a{
+  font-size: smaller;
+  color: black;
+  text-align: center;
+  text-decoration: underline;
+}
+#footerLink div:nth-child(2) span:first-child {
+  margin: 4%;
+  font-size: large;
+  color: black;
+  text-align: center;
+}
+#footerLink div:nth-child(3) {
+  display: flex;
+  gap: 5px;
+  margin-left: 5%;
+  align-items: center;
+}
+
+#footerLink input {
+  background-color: white;
+  padding: 10px;
+  /* height: 100%; */
+  /* width: 60%; */
+  /* max-height: max-content; */
+}
+#footerLink button {
+  background-color: #137be4;
+  color: white;
+  padding: 17px;
+  border: none;
+  border-radius: 5px;
+  width: 80%;
+  text-align: center;
+  height: 100%;
+  font-size: medium;
+}
+#footerLink button:hover{
+  background-color: #1b61a7;
+}
   
-  @media screen and (width<750px) {
-    #Style > h1 + #card5 {
-      grid-template-columns: repeat(1, 1fr);
-    }
-    #search > h1 + #search1 {
-      grid-template-columns: repeat(2, 1fr);
-    }
-    #midPart1 > h1 {
-      font-size: 30px;
-    }
-    #midPart1 h2 {
-      font-size: 1.2rem;
-    }
-  
-    #midPart1 h2 + p {
-      font-size: 1rem;
-    }
-    #midPart2 > h1 {
-      font-size: 30px;
-    }
-  
-    #fBrands > h1 + #card4 {
-      grid-template-columns: repeat(2, 1fr);
-    }
-    #midPart2 > h1 + div {
-      grid-template-columns: repeat(3, 1fr);
-    }
-    #navbarstart .icons{
-        display: none;
-    }
-    #navbarstart #menu{
-        display: inline;
-    }
-    
-    
-  }
-  @media screen and (max-width: 970px) {
-    #navbaritems {
-      display: none;
-    }
-    #navbarstart > a {
-      width: 100%;
-    }
-    
-  }
   /* Image Slider CSS */
 .slider {
   width: 100%;
-  /* height: 500px; */
+  height: 500px;
   overflow: hidden;
   margin-top: 70px;
 }
@@ -595,7 +619,7 @@ footer a{
   object-fit: contain;
 }
 
-/css for manual slide navigation/
+/* /css for manual slide navigation/ */
 
 .navigation-manual {
   position: absolute;
@@ -638,4 +662,116 @@ footer a{
 
 #radio5:checked~.first {
   margin-left: -80%;
+}
+
+/* /css for automatic navigation/ */
+
+.navigation-auto {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-top: 475px;
+}
+
+.navigation-auto div {
+  border: 2px solid rgba(211, 211, 211, 0.651);
+  padding: 1.9px;
+  border-radius: 10px;
+  transition: 1s;
+}
+
+.navigation-auto div:not(:last-child) {
+  margin-right: 10px;
+}
+
+#radio1:checked~.navigation-auto .auto-btn1 {
+  background: gray;
+}
+
+#radio2:checked~.navigation-auto .auto-btn2 {
+  background: gray;
+}
+
+#radio3:checked~.navigation-auto .auto-btn3 {
+  background: gray;
+}
+
+#radio4:checked~.navigation-auto .auto-btn4 {
+  background: gray;
+}
+
+#radio5:checked~.navigation-auto .auto-btn5 {
+  background: gray;
+}
+@media screen and (width<1200px) {
+  #midPart1 h2 {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (width<900px) {
+  #midPart1 > h1 + div {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  #midPart2 > h1 + div {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  #midPart4 > h1 + #card3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (width<750px) {
+  #Style > h1 + #card5 {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  #search > h1 + #search1 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  #midPart1 > h1 {
+    font-size: 30px;
+  }
+  #midPart1 h2 {
+    font-size: 1.2rem;
+  }
+
+  #midPart1 h2 + p {
+    font-size: 1rem;
+  }
+  #midPart2 > h1 {
+    font-size: 30px;
+  }
+
+  #fBrands > h1 + #card4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  #midPart2 > h1 + div {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  #navbarstart .icons{
+      display: none;
+  }
+  #navbarstart #menu{
+      display: inline;
+  }
+  
+  
+}
+@media screen and (max-width: 970px) {
+  #navbaritems {
+    display: none;
+  }
+  #navbarstart > a {
+    width: 100%;
+  }
+  .slider {
+    width: 100%;
+    overflow: hidden;
+    margin-top: 10px;
+  }
+  
+  .slides {
+    width: 500%;
+    display: flex;
+  }
 }
