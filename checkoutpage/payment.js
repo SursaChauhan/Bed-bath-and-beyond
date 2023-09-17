@@ -15,12 +15,30 @@ var discountprice=[1240]
 var subtotal =document.getElementById("subtotal");
 
 const newprice =totalprice -discountprice
-const totalpriceElement = document.createElement('p');
-totalpriceElement.textContent = `Subtotal: $${newprice}`;
 
+var div3= document.createElement("div");
+const span2 = document.createElement('p');
+span2.textContent = newprice;
+
+const totalpriceElement = document.createElement('p');
+totalpriceElement.textContent = `Subtotal: `;
+div3.append(totalpriceElement,(span2))
+
+
+// var div1= document.createElement("div");
+// const span = document.createElement('h3');
+// span.textContent = totalprice;
+
+var div2= document.createElement("div");
+const span1 = document.createElement('p');
+span1.textContent = discountprice;
+
+const discountpriceElement = document.createElement('p');
+discountpriceElement.textContent = `Discount Price: `;
+div2.append(discountpriceElement,(span1))
 
 var div1= document.createElement("div");
-const span = document.createElement('h3');
+const span = document.createElement('p');
 span.textContent = totalprice;
 
 
@@ -28,32 +46,77 @@ const totalitemsElement = document.createElement('p');
 totalitemsElement.textContent = ` ${totalitems} (Items):`;
 div1.append(totalitemsElement,(span))
 
+
+
+
+var div4= document.createElement("div");
+const span3 = document.createElement('p');
+span3.textContent =` Free` ;
+
 const totalship = document.createElement('p');
-totalship.textContent = `Shipping: Free`;
+totalship.textContent = `Shipping:`;
+div4.append(totalship,(span3))
+
+
 
 const totaltaxprice= [2114.30]
-const totaltax = document.createElement('p');
-totaltax.textContent = `Estimated Tax: ${totaltaxprice}`;
+var div5= document.createElement("div");
+const span4 = document.createElement('p');
+span4.textContent =parseFloat(totaltaxprice );
 
-const discountpriceElement = document.createElement('p');
-discountpriceElement.textContent = `Discount Price: $${discountprice}`;
+const totaltax = document.createElement('p');
+totaltax.textContent = `Estimated Tax: `;
+div5.append(totaltax,(span4))
+
 
 
 const buyprice =parseFloat(newprice) +parseFloat (totaltaxprice)
+
+
+var div6= document.createElement("div");
+const span5 = document.createElement('p');
+span5.textContent =parseFloat(buyprice);
+
 const buypriceElement = document.createElement('p');
-buypriceElement.textContent = `Your Total: $${buyprice}`;
+buypriceElement.textContent = `Your Total: `;
+div6.append(buypriceElement,(span5))
+
+var div7 =document.createElement("div");
+
+const iconElement = document.createElement("img");
+iconElement.setAttribute("src","https://icon-library.com/images/lock-icon/lock-icon-8.jpg")
+iconElement.classList.add("lock");
+iconElement.style.width="2rem"
+div7.style.backgroundColor="#46a1e3"
+
+
+const lockElement = document.createElement('p');
+lockElement.textContent = `CheckOut `;
+
+div7.append(iconElement,lockElement)
+div7.style.display="flex"
+div7.style.justifyContent="center"
+div7.style.gap="16px"
+div7.style.color="white"
+div7.style.borderRadius="5px"
+
+var div8 =document.createElement("p")
+div8.textContent=`This Order Ships Free!`
+div8.style.display="flex"
+div8.style.justifyContent="center"
 
 const hrElement = document.createElement('hr');
 hrElement.setAttribute("class","hrclass");
 
 subtotal.appendChild(div1);
-subtotal.appendChild(discountpriceElement);
-subtotal.appendChild(totalpriceElement);
+subtotal.appendChild(div2);
+subtotal.appendChild(div3);
 subtotal.appendChild(hrElement);
-subtotal.appendChild(totalship);
-subtotal.appendChild(totaltax);
-subtotal.appendChild(buypriceElement);
-
+subtotal.appendChild(div4);
+subtotal.appendChild(div5);
+subtotal.appendChild(div6);
+subtotal.appendChild(div7);
+subtotal.appendChild(div8);
 
 var couponCode = "MASAI30"; // Coupon code for 20% discount
 var isCouponApplied = false; // Flag to track coupon application
