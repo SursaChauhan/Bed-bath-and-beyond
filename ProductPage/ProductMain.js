@@ -401,18 +401,16 @@ var sofaData = [
   },
 ];
 
-display(sofaData);
+
+var parent = document.querySelector("#product-page-item-div");
 
 function display(array) {
-  var parent = document.querySelector("#product-page-item-div");
+ 
   parent.innerHTML = "";
 
   array.forEach(function (element, index) {
     var div = document.createElement("div");
 
-    // div.addEventListener("click",function(){
-    // window.location.assign("/productPage/kidsData/kids.html")
-    // });
     var img = document.createElement("img");
     img.setAttribute("id", "img-img");
     img.setAttribute("src", element.image1);
@@ -459,16 +457,18 @@ function display(array) {
   });
 }
 
-var salarySortSelect = document.getElementById("salarysort");
-salarySortSelect.addEventListener("change", function () {
-  var salarySortBy = salarySortSelect.value;
-  if (salarySortBy === "High to low") {
+
+var sortingSelect = document.getElementById("sorting");
+
+sortingSelect.addEventListener("change", function () {
+  var sortingBy = sortingSelect.value;
+  if (sortingBy === "High to low") {
     sofaData.sort(
       (a, b) =>
         parseInt(b.price.replace("$", "")) - parseInt(a.price.replace("$", ""))
     );
     display(sofaData);
-  } else if (salarySortBy === "Low to high") {
+  } else if (sortingBy === "Low to high") {
     sofaData.sort(
       (a, b) =>
         parseInt(a.price.replace("$", "")) - parseInt(b.price.replace("$", ""))

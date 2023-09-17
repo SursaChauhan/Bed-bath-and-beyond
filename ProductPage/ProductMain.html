@@ -5,546 +5,518 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>productPage</title>
+
   <link rel="stylesheet" href="ProductMain.css">
+  <link rel="stylesheet" href="./Itemdetails/footer.css">
+
+
 </head>
 
 <body>
-  <div id="ship">
-    <P> Ship to: </P>
-    <br></br>
-    <img
-      src="data:image/png;base64,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">
-    <p> INDIA</p>
-  </div>
-  <div id="navbarstart">
-    <img src="https://bedbathandbeyond.gcs-web.com/system/files-encrypted/nasdaq_kms/inline-images/BBBlogo.png"
-      alt="logo">
-    <div>
-      <input placeholder="Search...everything you find ship for free ">
-      <button id="navbarSearchBtn" type="submit"><i class="fa fa-search"></i></button>
+  <!-- Navbar starts here -->
+  <header>
+    <div id="ship">
+      <p>Ship to:</p>
+      <br />
+      <img src="./IMAGES/india-image.png" />
+      <p>INDIA</p>
     </div>
-    <div>
-      <svg class="UserDropDowns_icon_08" width="20" height="20" viewBox="0 0 24 24" stroke="#2F3337" fill="#2F3337">
-        <title>User</title>
-        <path d="M1 23c0-5.523 4.477-10 10-10h2c5.523 0 10 4.477 10 10M12 13a6 6 0 100-12 6 6 0 000 12z"
-          stroke="inherit" fill="none" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"
-          stroke-linejoin="round"></path>
-      </svg>
-      <br>
-      <a href="index.html">Account</a>
-    </div>
-    <div>
-      <svg class="UserDropDowns_icon_06" width="22" height="22" viewBox="0 0 24 24" stroke="#2F3337" fill="#2F3337">
-        <title>Heart</title>
-        <path d="M21.241 3.757A6 6 0 0012 4.684a6 6 0 10-9.242 7.558l9.241 9.243 9.243-9.243a6 6 0 000-8.485z"
-          fill="none" stroke="inherit" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"
-          stroke-linejoin="round"></path>
-      </svg>
-      <br>
-      <a href="index.html">List</a>
-    </div>
-    <div>
-      <div id="cartCount"></div>
-      <svg class="UserDropDowns_icon_06" width="22" height="21" viewBox="0 0 24 24" stroke="#2F3337" fill="#2F3337">
-        <path fill-rule="evenodd" clip-rule="evenodd"
-          d="M7.174 14.4L5.208.833C5.14.356 4.697 0 4.174 0h-3.13C.466 0 0 .43 0 .96s.467.96 1.043.96H3.26l1.966 13.567c.07.477.512.833 1.035.833h14.608c.498 0 .926-.323 1.024-.772l2.087-9.6c.113-.52-.254-1.025-.819-1.13-.565-.103-1.115.234-1.228.754L20.014 14.4H7.174zm.13 9.6a2.087 2.087 0 100-4.174 2.087 2.087 0 000 4.174zm14.61-2.087a2.087 2.087 0 11-4.175 0 2.087 2.087 0 014.174 0z"
-          stroke="none" fill="inherit"></path>
-      </svg>
-
-      <br>
-      <a href="index.html"> Cart </a>
-    </div>
-  </div>
-  <div id="navbaritems">
-    <ul>
-      <li>
-        <a href="">Furniture</a>
-        <ul>
-          <li><a href="">Living Room Furniture</a></li>
-          <li><a href="">Patio Furniture</a></li>
-          <li><a href=""> Bedroom Furniture</a></li>
-          <li><a href=""> Office Furniture</a></li>
-          <li><a href="">Living Room Furniture</a></li>
-          <li><a href="">Patio Furniture</a></li>
-          <li><a href=""> Bedroom Furniture</a></li>
-          <li><a href=""> Office Furniture</a></li>
-        </ul>
-      </li>
-      <li>
-        <a href="">Outdoors</a>
-        <ul>
-          <li><a href="">Patio Furniture</a></li>
-          <li><a href="">Garden </a></li>
-          <li><a href=""> Outdoor Decor </a></li>
-          <li><a href=""> Grills and Outdoor Cooking </a></li>
-          <li><a href=""> Outdoor Shades and Structures </a></li>
-          <li><a href="">Sport and Outdoor </a></li>
-          <li><a href=""> Bedroom Furniture</a></li>
-          <li><a href=""> Office Furniture</a></li>
-        </ul>
-      </li>
-      <li>
-        <a href="">Rugs</a>
-        <ul>
-          <li><a href="">Area Rugs By Size </a></li>
-          <li><a href="">Trending Rugs</a></li>
-          <li><a href=""> Area Rugs by Color </a></li>
-          <li><a href=""> Area Rugs by Style </a></li>
-          <li><a href=""> Rugs By Types </a></li>
-        </ul>
-      </li>
-      <li>
-        <a href="">Decor</a>
-        <ul>
-          <li><a href="">Mirrros </a></li>
-          <li><a href="">Faux Plants and Flowers </a></li>
-          <li><a href=""> Decorative Accessories </a></li>
-          <li><a href=""> Window Treatments </a></li>
-          <li><a href=""> Arts </a></li>
-          <li><a href="">Throw Pillow </a></li>
-        </ul>
-      </li>
-      <li>
-        <a href="">Bedding</a>
-        <ul>
-          <li><a href="">Bedding Sets</a></li>
-          <li><a href="">Bedding Essentials </a></li>
-          <li><a href="">Bed Sheets and Pollowcases</a></li>
-          <li><a href=""> Window Treatments </a></li>
-          <li><a href=""> Mattress Pads and Toppers </a></li>
-          <li><a href="">Mattress</a></li>
-          <li><a href="">Blankets</a></li>
-        </ul>
-      </li>
-      <li>
-        <a href="">HomeImprovement</a>
-        <ul>
-          <li><a href="">Kitchens </a></li>
-          <li><a href="">Flooring and Wall </a></li>
-          <li><a href="">Bathroom </a></li>
-          <li><a href=""> Vacuums </a></li>
-          <li><a href=""> Storage and Organization </a></li>
-          <li><a href="">Home Essentials</a></li>
-        </ul>
-      </li>
-      <li>
-        <a href="">Kitchen</a>
-        <ul>
-          <li><a href="">Dinnerware </a></li>
-          <li><a href="">Cookware and Bakeware </a></li>
-          <li><a href="">Kitchen Furniture</a></li>
-          <li><a href=""> Kitchen Appliances </a></li>
-          <li><a href=""> Coffee and Tea</a></li>
-          <li><a href=""> Kitchen Storage</a></li>
-        </ul>
-      </li>
-      <li>
-        <a href="">Lighting</a>
-        <ul>
-          <li><a href="">Celing Lights</a></li>
-          <li><a href="">Ceiling Fans </a></li>
-          <li><a href="">Wall Lighting </a></li>
-          <li><a href=""> Outdoors Lighting</a></li>
-          <li><a href=""> Lamps and Lamps Shades </a></li>
-          <li><a href="">Kitchen and Bath Lighting</a></li>
-        </ul>
-      </li>
-      <li>
-        <a href="">Kids&Baby</a>
-        <ul>
-          <li><a href="">Kids Furniture</a></li>
-          <li><a href="">Baby Furniture</a></li>
-          <li><a href="">Kids Bedding</a></li>
-          <li><a href=""> Nursery Decor</a></li>
-          <li><a href=""> Kids Bath </a></li>
-          <li><a href="">Baby bedding </a></li>
-        </ul>
-      </li>
-      <li>
-        <a href="">Bath</a>
-        <ul>
-          <li><a href=""> Bathroom Rugs and Bath Mats</a></li>
-          <li><a href=""> Bathroom Accessories</a></li>
-          <li><a href=""> Towels</a></li>
-          <li><a href=""> Shower Curtains and Accessories</a></li>
-          <li><a href=""> Bathroom Renovation </a></li>
-        </ul>
-      </li>
-      <li>
-        <a href="">More</a>
-        <ul>
-          <li><a href="">Holiday</a></li>
-          <li><a href="">Large Appliances</a></li>
-          <li><a href="">Gifting </a></li>
-          <li><a href=""> Excerise Equipments </a></li>
-          <li><a href=""> Entryways</a></li>
-          <li><a href="">Brand We Love </a></li>
-        </ul>
-      </li>
-      <li>
-        <a href="">Ideas</a>
-        <ul>
-          <li><a href="">Holiday</a></li>
-          <li><a href="">Large Appliances</a></li>
-          <li><a href="">Gifting </a></li>
-          <li><a href=""> Excerise Equipments </a></li>
-          <li><a href=""> Entryways</a></li>
-          <li><a href="">Brand We Love </a></li>
-        </ul>
-      </li>
-      <li>
-        <a href="" style="color: red;">Sales&Deals</a>
-      </li>
-    </ul>
-
-    <main>
-      <!-- <div class="head">
-        <img src="https://1000logos.net/wp-content/uploads/2017/08/Color-Bed-Bath-and-Beyond-Logo.jpg" alt="logoimg">
-
-        <img src="https://i.pcmag.com/imagery/articles/07MjT1LtMPktaph6pUyBRrf-1..v1569488382.jpg" alt="overstocklogo">
-        <h3>overstock.ca</h3>
-      </div> -->
-
-      <div class="firstcontainer">
-
-        <div>
-          <p>Furniture / Living Room / Sofas & Couches</p>
-          <h2>Sofas & Couches</h2>
-        </div>
-        <div>
-          <select id="salarysort">
-            <option value="">Best Selling</option>
-            <option value="onsale">On Sale</option>
-            <option value="High to low">Price High - Low</option>
-            <option value="Low to high">Price Low - High</option>
-          </select>
-        </div>
+    <div id="navbarstart">
+      <img src="./IMAGES/logo.png" alt="logo" />
+      <div>
+        <input placeholder="Search...everything you find ship for free " />
+        <button id="navbarSearchBtn" type="submit">
+          <svg width="22" height="22" viewBox="0 0 24 24" stroke="#ffffff" fill="#FFFFFF">
+            <title>Search</title>
+            <path d="M22 22l-6.344-6.344M10 18a8 8 0 100-16 8 8 0 000 16z" stroke="inherit" fill="none" stroke-width="3"
+              stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+        </button>
       </div>
-      <hr>
-      <div class="secondcontainer">
+      <div>
+        <svg class="UserDropDowns_icon_08" width="20" height="20" viewBox="0 0 24 24" stroke="#2F3337" fill="#2F3337">
+          <title>User</title>
+          <path d="M1 23c0-5.523 4.477-10 10-10h2c5.523 0 10 4.477 10 10M12 13a6 6 0 100-12 6 6 0 000 12z"
+            stroke="inherit" fill="none" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"
+            stroke-linejoin="round"></path>
+        </svg>
+        <br />
+        <a href="index.html">Account</a>
+      </div>
+      <div>
+        <svg class="UserDropDowns_icon_06" width="22" height="22" viewBox="0 0 24 24" stroke="#2F3337" fill="#2F3337">
+          <title>Heart</title>
+          <path d="M21.241 3.757A6 6 0 0012 4.684a6 6 0 10-9.242 7.558l9.241 9.243 9.243-9.243a6 6 0 000-8.485z"
+            fill="none" stroke="inherit" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"
+            stroke-linejoin="round"></path>
+        </svg>
+        <br />
+        <a href="index.html">List</a>
+      </div>
+      <div>
+        <div id="cartCount"></div>
+        <svg class="UserDropDowns_icon_06" width="22" height="21" viewBox="0 0 24 24" stroke="#2F3337" fill="#2F3337">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M7.174 14.4L5.208.833C5.14.356 4.697 0 4.174 0h-3.13C.466 0 0 .43 0 .96s.467.96 1.043.96H3.26l1.966 13.567c.07.477.512.833 1.035.833h14.608c.498 0 .926-.323 1.024-.772l2.087-9.6c.113-.52-.254-1.025-.819-1.13-.565-.103-1.115.234-1.228.754L20.014 14.4H7.174zm.13 9.6a2.087 2.087 0 100-4.174 2.087 2.087 0 000 4.174zm14.61-2.087a2.087 2.087 0 11-4.175 0 2.087 2.087 0 014.174 0z"
+            stroke="none" fill="inherit"></path>
+        </svg>
 
-        <div id="productsidebar">
+        <br />
+        <a href="index.html"> Cart </a>
+      </div>
+    </div>
+    <div id="navbaritems">
+      <ul>
+        <li>
+          <a href="">Furniture</a>
+          <ul>
+            <li><a href="">Living Room Furniture</a></li>
+            <li><a href="">Patio Furniture</a></li>
+            <li><a href=""> Bedroom Furniture</a></li>
+            <li><a href=""> Office Furniture</a></li>
+            <li><a href="">Living Room Furniture</a></li>
+            <li><a href="">Patio Furniture</a></li>
+            <li><a href=""> Bedroom Furniture</a></li>
+            <li><a href=""> Office Furniture</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="">Outdoors</a>
+          <ul>
+            <li><a href="">Patio Furniture</a></li>
+            <li><a href="">Garden </a></li>
+            <li><a href=""> Outdoor Decor </a></li>
+            <li><a href=""> Grills and Outdoor Cooking </a></li>
+            <li><a href=""> Outdoor Shades and Structures </a></li>
+            <li><a href="">Sport and Outdoor </a></li>
+            <li><a href=""> Bedroom Furniture</a></li>
+            <li><a href=""> Office Furniture</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="">Rugs</a>
+          <ul>
+            <li><a href="">Area Rugs By Size </a></li>
+            <li><a href="">Trending Rugs</a></li>
+            <li><a href=""> Area Rugs by Color </a></li>
+            <li><a href=""> Area Rugs by Style </a></li>
+            <li><a href=""> Rugs By Types </a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="">Decor</a>
+          <ul>
+            <li><a href="">Mirrros </a></li>
+            <li><a href="">Faux Plants and Flowers </a></li>
+            <li><a href=""> Decorative Accessories </a></li>
+            <li><a href=""> Window Treatments </a></li>
+            <li><a href=""> Arts </a></li>
+            <li><a href="">Throw Pillow </a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="">Bedding</a>
+          <ul>
+            <li><a href="">Bedding Sets</a></li>
+            <li><a href="">Bedding Essentials </a></li>
+            <li><a href="">Bed Sheets and Pollowcases</a></li>
+            <li><a href=""> Window Treatments </a></li>
+            <li><a href=""> Mattress Pads and Toppers </a></li>
+            <li><a href="">Mattress</a></li>
+            <li><a href="">Blankets</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="">Home </a>
+          <ul>
+            <li><a href="">Kitchens </a></li>
+            <li><a href="">Flooring and Wall </a></li>
+            <li><a href="">Bathroom </a></li>
+            <li><a href=""> Vacuums </a></li>
+            <li><a href=""> Storage and Organization </a></li>
+            <li><a href="">Home Essentials</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="">Kitchen</a>
+          <ul>
+            <li><a href="">Dinnerware </a></li>
+            <li><a href="">Cookware and Bakeware </a></li>
+            <li><a href="">Kitchen Furniture</a></li>
+            <li><a href=""> Kitchen Appliances </a></li>
+            <li><a href=""> Coffee and Tea</a></li>
+            <li><a href=""> Kitchen Storage</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="">Lighting</a>
+          <ul>
+            <li><a href="">Celing Lights</a></li>
+            <li><a href="">Ceiling Fans </a></li>
+            <li><a href="">Wall Lighting </a></li>
+            <li><a href=""> Outdoors Lighting</a></li>
+            <li><a href=""> Lamps and Lamps Shades </a></li>
+            <li><a href="">Kitchen and Bath Lighting</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="">Kids & Baby</a>
+          <ul>
+            <li><a href="">Kids Furniture</a></li>
+            <li><a href="">Baby Furniture</a></li>
+            <li><a href="">Kids Bedding</a></li>
+            <li><a href=""> Nursery Decor</a></li>
+            <li><a href=""> Kids Bath </a></li>
+            <li><a href="">Baby bedding </a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="">Bath</a>
+          <ul>
+            <li><a href=""> Bathroom Rugs and Bath Mats</a></li>
+            <li><a href=""> Bathroom Accessories</a></li>
+            <li><a href=""> Towels</a></li>
+            <li><a href=""> Shower Curtains and Accessories</a></li>
+            <li><a href=""> Bathroom Renovation </a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="">More</a>
+          <ul>
+            <li><a href="">Holiday</a></li>
+            <li><a href="">Large Appliances</a></li>
+            <li><a href="">Gifting </a></li>
+            <li><a href=""> Excerise Equipments </a></li>
+            <li><a href=""> Entryways</a></li>
+            <li><a href="">Brand We Love </a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="">Ideas</a>
+          <ul>
+            <li><a href="">Holiday</a></li>
+            <li><a href="">Large Appliances</a></li>
+            <li><a href="">Gifting </a></li>
+            <li><a href=""> Excerise Equipments </a></li>
+            <li><a href=""> Entryways</a></li>
+            <li><a href="">Brand We Love </a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="" style="color: red">Sales & Deals</a>
+        </li>
+      </ul>
+    </div>
+  </header>
+  <!-- Navbar ends here -->
 
-          <div id="filterBrand" class="filter">
-
-            <h5>
-              <p style="display: inline-block;">Brand</p> <img
-                src="https://t3.ftcdn.net/jpg/04/83/39/12/360_F_483391217_rDo0Gdjp71zXabPRjeaE1O3I85R6nIgB.jpg"
-                alt="belowdrop">
-            </h5>
-            <div class="dropdown-content">
-
-              <form action="">
-                <input class="brands" type="checkbox" value="Modway" />
-                <label for="">Modway</label><br />
-
-                <input class="brands" type="checkbox" value="Highland" />
-                <label for=""> Highland</label><br />
-
-                <input class="brands" type="checkbox" value="Benzara" id="Benzara" />
-                <label for="Benzara">Benzara</label><br />
 
 
+  <!-- ProductMain starts here -->
+  <main>
+    <div class="firstcontainer">
+      <div>
+        <h2>Sofas & Couches</h2>
+      </div>
+      <div>
+        <select id="sorting">
+          <option value="">Best Selling</option>
+          <option value="onsale">On Sale</option>
+          <option value="High to low">Price High - Low</option>
+          <option value="Low to high">Price Low - High</option>
+        </select>
+      </div>
+    </div>
+    <hr>
+    <div class="secondcontainer">
 
-                <input class="brands" type="checkbox" value="LivEditor" />
-                <label for="">LivEditor</label><br />
+      <div id="productsidebar">
+
+        <div id="filterBrand" class="filter">
+
+          <h5>
+            <p style="display: inline-block;">Brand</p> <img
+              src="https://t3.ftcdn.net/jpg/04/83/39/12/360_F_483391217_rDo0Gdjp71zXabPRjeaE1O3I85R6nIgB.jpg"
+              alt="belowdrop">
+          </h5>
+          <div class="dropdown-content">
+
+            <form action="">
+        
+              <input class="brands" type="checkbox" value="Highland" />
+              <label for=""> Highland</label><br />
+
+              <input class="brands" type="checkbox" value="Benzara" id="Benzara" />
+              <label for="Benzara">Benzara</label><br />
+
+              <input class="brands" type="checkbox" value="LivEditor" />
+              <label for="">LivEditor</label><br />
 
 
-              </form>
-            </div>
-
-
+            </form>
           </div>
-          <hr>
-          <div id="filterColor" class="filter">
 
-            <h5>
-              <p style="display: inline-block;">Color</p><img
-                src="https://t3.ftcdn.net/jpg/04/83/39/12/360_F_483391217_rDo0Gdjp71zXabPRjeaE1O3I85R6nIgB.jpg"
-                alt="belowdrop">
-            </h5>
-
-            <div class="dropdown-content">
-
-              <form action="">
-                <input class="color" type="checkbox" value="black" />
-                <span><input value="black"
-                    style="background-color:#36454f; border-radius: 1rem; scale: 0.8;padding: 0rem 0.1rem ;"
-                    type="radio"></span>
-                <label for=""> Black</label><br />
-
-                <input class="color" type="checkbox" value="blue" />
-                <input value="blue"
-                  style="background-color:#0074d9; border-radius: 1rem; scale: 0.8;padding: 0rem 0.1rem ;" type="radio">
-                <label for=""> Blue</label><br />
-
-                <input class="color" type="checkbox" value="white" />
-                <span><input value="white"
-                    style="background-color:white; border-radius: 1rem; scale: 0.8;padding: 0rem 0.1rem ;"
-                    type="radio"></span>
-                <label for=""> White</label><br />
-
-                <input class="color" type="checkbox" value="green" />
-                <input value="green"
-                  style="background-color:#5eb160; border-radius: 1rem; scale: 0.8;padding: 0rem 0.1rem ;" type="radio">
-                <label for=""> Green</label><br />
-
-                <input class="color" type="checkbox" value="red" />
-                <span><input value="red"
-                    style="background-color:#d34b56; border-radius: 1rem; scale: 0.8;padding: 0rem 0.1rem ;"
-                    type="radio"></span>
-                <label for=""> Red</label>
-              </form>
-            </div>
-
-          </div>
-          <hr />
-          <div id="filterPrice" class="filter">
-
-            <h5>
-              <p style="display: inline-block;">Price</p> <img
-                src="https://t3.ftcdn.net/jpg/04/83/39/12/360_F_483391217_rDo0Gdjp71zXabPRjeaE1O3I85R6nIgB.jpg"
-                alt="belowdrop">
-            </h5>
-
-            <div class="dropdown-content">
-              <form action="">
-                <input class="price" type="checkbox" value="124-2500" />
-                <label for=""> Rs. 124 to Rs. 2500</label><br>
-                <input class="price" type="checkbox" value="2500-5000" />
-                <label for=""> Rs. 2500 to Rs. 5000</label><br />
-                <input class="price" type="checkbox" value="5000-7500" />
-                <label for=""> Rs. 5000 to Rs. 7500</label>
-
-              </form>
-            </div>
-
-          </div>
-          <hr>
-          <div id="filterPrice" class="filter">
-
-            <h5>Pattern <img
-                src="https://t3.ftcdn.net/jpg/04/83/39/12/360_F_483391217_rDo0Gdjp71zXabPRjeaE1O3I85R6nIgB.jpg"
-                alt="belowdrop"></h5>
-
-            <div class="dropdown-content">
-              <form action="">
-                <input class="price" type="checkbox" value="124-2500" />
-                <label for="">Abstract</label><br>
-                <input class="price" type="checkbox" value="2500-5000" />
-                <label for=""> Flower</label><br />
-                <input class="price" type="checkbox" value="5000-7500" />
-                <label for=""> Animal</label>
-
-              </form>
-            </div>
-
-          </div>
-
-          <hr>
-          <div id="filterPrice" class="filter">
-
-            <h5>
-              <p style="display: inline-block;">Customer Ratings</p> <img
-                src="https://t3.ftcdn.net/jpg/04/83/39/12/360_F_483391217_rDo0Gdjp71zXabPRjeaE1O3I85R6nIgB.jpg"
-                alt="belowdrop">
-            </h5>
-
-            <div class="dropdown-content">
-              <form action="">
-                <input class="price" type="checkbox" value="124-2500" />
-                <label for=""> 3Star & up</label><br>
-                <input class="price" type="checkbox" value="2500-5000" />
-                <label for=""> 4Star & up</label><br />
-                <input class="price" type="checkbox" value="5000-7500" />
-                <label for=""> 5 Star</label>
-
-              </form>
-            </div>
-
-          </div>
-          <hr>
-          <div id="filterPrice" class="filter">
-
-            <h5>
-              <p style="display: inline-block;">Product Features</p> <img
-                src="https://t3.ftcdn.net/jpg/04/83/39/12/360_F_483391217_rDo0Gdjp71zXabPRjeaE1O3I85R6nIgB.jpg"
-                alt="belowdrop">
-            </h5>
-
-            <div class="dropdown-content">
-              <form action="">
-                <input class="price" type="checkbox" value="124-2500" />
-                <label for=""> Nailheads</label><br>
-                <input class="price" type="checkbox" value="2500-5000" />
-                <label for=""> Power Recline</label><br />
-                <input class="price" type="checkbox" value="5000-7500" />
-                <label for="">Slipcovered</label>
-
-              </form>
-            </div>
-
-          </div>
-          <hr>
-          <div id="filterPrice" class="filter">
-
-            <h5>
-              <p style="display: inline-block;">Assembly</p> <img
-                src="https://t3.ftcdn.net/jpg/04/83/39/12/360_F_483391217_rDo0Gdjp71zXabPRjeaE1O3I85R6nIgB.jpg"
-                alt="belowdrop">
-            </h5>
-
-            <div class="dropdown-content">
-              <form action="">
-                <input class="price" type="checkbox" value="124-2500" />
-                <label for=""> Assembled</label><br>
-
-
-
-              </form>
-            </div>
-
-          </div>
-          <hr>
-          <div id="filterPrice" class="filter">
-
-            <h5>
-              <p style="display: inline-block;">Back Style</p> <img
-                src="https://t3.ftcdn.net/jpg/04/83/39/12/360_F_483391217_rDo0Gdjp71zXabPRjeaE1O3I85R6nIgB.jpg"
-                alt="belowdrop">
-            </h5>
-
-            <div class="dropdown-content">
-              <form action="">
-                <input class="price" type="checkbox" value="124-2500" />
-                <label for="">Camel Back</label><br>
-                <input class="price" type="checkbox" value="2500-5000" />
-                <label for="">cushionn Back</label><br />
-                <input class="price" type="checkbox" value="5000-7500" />
-                <label for=""> Loose back</label>
-
-              </form>
-            </div>
-
-          </div>
-          <hr>
-          <div id="filterPrice" class="filter">
-            <h5>
-              <p style="display: inline-block;">Print</p><img
-                src="https://t3.ftcdn.net/jpg/04/83/39/12/360_F_483391217_rDo0Gdjp71zXabPRjeaE1O3I85R6nIgB.jpg"
-                alt="belowdrop">
-            </h5>
-
-            <div class="dropdown-content">
-              <form action="">
-                <input class="price" type="checkbox" value="124-2500" />
-                <label for=""> Pattern</label><br>
-                <input class="price" type="checkbox" value="2500-5000" />
-                <label for="">Solid</label><br />
-
-              </form>
-            </div>
-
-          </div>
-          <hr>
 
         </div>
         <hr>
+        <div id="filterColor" class="filter">
 
+          <h5>
+            <p style="display: inline-block;">Color</p><img
+              src="https://t3.ftcdn.net/jpg/04/83/39/12/360_F_483391217_rDo0Gdjp71zXabPRjeaE1O3I85R6nIgB.jpg"
+              alt="belowdrop">
+          </h5>
 
-        <div id="product-page-item-div">
+          <div class="dropdown-content">
+
+            <form action="">
+              <input class="color" type="checkbox" value="black" />
+              <span><input value="black"
+                  style="background-color:#36454f; border-radius: 1rem; scale: 0.8;padding: 0rem 0.1rem ;"
+                  type="radio"></span>
+              <label for=""> Black</label><br />
+
+              <input class="color" type="checkbox" value="blue" />
+              <input value="blue"
+                style="background-color:#0074d9; border-radius: 1rem; scale: 0.8;padding: 0rem 0.1rem ;" type="radio">
+              <label for=""> Blue</label><br />
+
+              <input class="color" type="checkbox" value="white" />
+              <span><input value="white"
+                  style="background-color:white; border-radius: 1rem; scale: 0.8;padding: 0rem 0.1rem ;"
+                  type="radio"></span>
+              <label for=""> White</label><br />
+
+              <input class="color" type="checkbox" value="green" />
+              <input value="green"
+                style="background-color:#5eb160; border-radius: 1rem; scale: 0.8;padding: 0rem 0.1rem ;" type="radio">
+              <label for=""> Green</label><br />
+
+              <input class="color" type="checkbox" value="red" />
+              <span><input value="red"
+                  style="background-color:#d34b56; border-radius: 1rem; scale: 0.8;padding: 0rem 0.1rem ;"
+                  type="radio"></span>
+              <label for=""> Red</label>
+            </form>
+          </div>
+
         </div>
-      </div>
-      <hr>
+        <hr />
+        <div id="filterPrice" class="filter">
 
-      <div id="product-page-list">
+          <h5>
+            <p style="display: inline-block;">Price</p> <img
+              src="https://t3.ftcdn.net/jpg/04/83/39/12/360_F_483391217_rDo0Gdjp71zXabPRjeaE1O3I85R6nIgB.jpg"
+              alt="belowdrop">
+          </h5>
 
-        <div>
-          <button> <span class="arrow"> < </span> </button>
-          <button>1</button>
-          <button>2</button>
-          <button>3</button>
-          <button>4</button>
-          <button>5</button>
-          <button> . . .</button>
-          <button>211</button>
+          <div class="dropdown-content">
+            <form action="">
+              <input class="price" type="checkbox" value="124-2500" />
+              <label for=""> Rs. 124 to Rs. 2500</label><br>
+              <input class="price" type="checkbox" value="2500-5000" />
+              <label for=""> Rs. 2500 to Rs. 5000</label><br />
+              <input class="price" type="checkbox" value="5000-7500" />
+              <label for=""> Rs. 5000 to Rs. 7500</label>
 
-          <button> <span class="arrow"> > </span> </button>
-        </div>
-        <!-- <div>
-          <button id="btn-next">Next &nbsp;&nbsp; <span><i class="fa fa-angle-right" style="font-size: 1rem"></i></span></button>
-        </div> -->
-      </div>
-
-      <div class="endproduct">
-
-
-        <div class="dropdiv">
-          <div style="margin-right: 1rem;">
-            <img src="http://ak1.ostkcdn.com/img/mxc/coop_pb_39947425_S.jpg?imwidth=183" alt="">
-          </div>
-          <div>
-            <p>Becky Cameron</p>
-            <h2>Extraa 15% Off</h2>
-            <p>Select Bedding</p>
-          </div>
-        </div>
-        <div class="dropdiv">
-          <div style="margin-right: 1rem;">
-            <img src="http://ak1.ostkcdn.com/img/mxc/coop_pb_18171859_S.jpg?imwidth=183" alt="">
-          </div>
-          <div>
-            <p>SAFAVIEH</p>
-            <h2>Extraa 20% Off</h2>
-            <p>Selected Area Rugs*</p>
-          </div>
-        </div>
-
-      </div>
-
-      <div style="text-align: center; margin: 2.5rem 0px;">
-        <h1>Related Reviews </h1>
-      </div>
-
-      <div class="Reviews">
-
-        <div class="Reviewbox">
-
-          <div>
-            <img
-              src="https://ak1.ostkcdn.com/images/products/is/images/direct/8f36cdde5cce08c50075b5ead28c817b9710afdc/4480-Basic-Wool-Sofa.jpg?imwidth=118"
-              alt="">
-          </div>
-          <div>
-            <div>
-              <img src="https://ak1.ostkcdn.com/img/mxc/20200227_rating-star-full.svg" alt="star">
-              <img src="https://ak1.ostkcdn.com/img/mxc/20200227_rating-star-full.svg" alt="star">
-
-              <img src="https://ak1.ostkcdn.com/img/mxc/20200227_rating-star-full.svg" alt="star">
-
-              <img src="https://ak1.ostkcdn.com/img/mxc/20200227_rating-star-empty.svg" alt="star">
-
-              <img src="https://ak1.ostkcdn.com/img/mxc/20200227_rating-star-empty.svg" alt="star">
-
-            </div>
-            <div>
-              <p>Purchased this couch in 2020. It took the expected amount of time to arrive. Initially we loved this
-                couch</p>
-            </div>
-
+            </form>
           </div>
 
         </div>
         <hr>
-        <div class="Reviewbox" ">
+        <div id="filterPrice" class="filter">
 
-    <div  >
-<img src="
-          https://ak1.ostkcdn.com/images/products/is/images/direct/b81fc7e7bc1cbbf010cd1f32f935a5c6d9867d27/Luis-Mid-century-modern-3-Seater-Sofa.jpg?imwidth=118"
-          alt="">
+          <h5>
+            <p style="display: inline-block;">Pattern</p><img
+              src="https://t3.ftcdn.net/jpg/04/83/39/12/360_F_483391217_rDo0Gdjp71zXabPRjeaE1O3I85R6nIgB.jpg"
+              alt="belowdrop">
+          </h5>
+
+          <div class="dropdown-content">
+            <form action="">
+              <input class="price" type="checkbox" value="124-2500" />
+              <label for="">Abstract</label><br>
+              <input class="price" type="checkbox" value="2500-5000" />
+              <label for=""> Flower</label><br />
+              <input class="price" type="checkbox" value="5000-7500" />
+              <label for=""> Animal</label>
+
+            </form>
+          </div>
+
+        </div>
+
+        <hr>
+        <div id="filterPrice" class="filter">
+
+          <h5>
+            <p style="display: inline-block;">Customer Ratings</p> <img
+              src="https://t3.ftcdn.net/jpg/04/83/39/12/360_F_483391217_rDo0Gdjp71zXabPRjeaE1O3I85R6nIgB.jpg"
+              alt="belowdrop">
+          </h5>
+
+          <div class="dropdown-content">
+            <form action="">
+              <input class="price" type="checkbox" value="124-2500" />
+              <label for=""> 3Star & up</label><br>
+              <input class="price" type="checkbox" value="2500-5000" />
+              <label for=""> 4Star & up</label><br />
+              <input class="price" type="checkbox" value="5000-7500" />
+              <label for=""> 5 Star</label>
+
+            </form>
+          </div>
+
+        </div>
+        <hr>
+        <div id="filterPrice" class="filter">
+
+          <h5>
+            <p style="display: inline-block;">Product Features</p> <img
+              src="https://t3.ftcdn.net/jpg/04/83/39/12/360_F_483391217_rDo0Gdjp71zXabPRjeaE1O3I85R6nIgB.jpg"
+              alt="belowdrop">
+          </h5>
+
+          <div class="dropdown-content">
+            <form action="">
+              <input class="price" type="checkbox" value="124-2500" />
+              <label for=""> Nailheads</label><br>
+              <input class="price" type="checkbox" value="2500-5000" />
+              <label for=""> Power Recline</label><br />
+              <input class="price" type="checkbox" value="5000-7500" />
+              <label for="">Slipcovered</label>
+
+            </form>
+          </div>
+
+        </div>
+        <hr>
+        <div id="filterPrice" class="filter">
+
+          <h5>
+            <p style="display: inline-block;">Assembly</p> <img
+              src="https://t3.ftcdn.net/jpg/04/83/39/12/360_F_483391217_rDo0Gdjp71zXabPRjeaE1O3I85R6nIgB.jpg"
+              alt="belowdrop">
+          </h5>
+
+          <div class="dropdown-content">
+            <form action="">
+              <input class="price" type="checkbox" value="124-2500" />
+              <label for=""> Assembled</label><br>
+
+
+
+            </form>
+          </div>
+
+        </div>
+        <hr>
+        <div id="filterPrice" class="filter">
+
+          <h5>
+            <p style="display: inline-block;">Back Style</p> <img
+              src="https://t3.ftcdn.net/jpg/04/83/39/12/360_F_483391217_rDo0Gdjp71zXabPRjeaE1O3I85R6nIgB.jpg"
+              alt="belowdrop">
+          </h5>
+
+          <div class="dropdown-content">
+            <form action="">
+              <input class="price" type="checkbox" value="124-2500" />
+              <label for="">Camel Back</label><br>
+              <input class="price" type="checkbox" value="2500-5000" />
+              <label for="">cushionn Back</label><br />
+              <input class="price" type="checkbox" value="5000-7500" />
+              <label for=""> Loose back</label>
+
+            </form>
+          </div>
+
+        </div>
+        <hr>
+        <div id="filterPrice" class="filter">
+          <h5>
+            <p style="display: inline-block;">Print</p><img
+              src="https://t3.ftcdn.net/jpg/04/83/39/12/360_F_483391217_rDo0Gdjp71zXabPRjeaE1O3I85R6nIgB.jpg"
+              alt="belowdrop">
+          </h5>
+
+          <div class="dropdown-content">
+            <form action="">
+              <input class="price" type="checkbox" value="124-2500" />
+              <label for=""> Pattern</label><br>
+              <input class="price" type="checkbox" value="2500-5000" />
+              <label for="">Solid</label><br />
+
+            </form>
+          </div>
+
+        </div>
+        <hr>
+
+      </div>
+      <hr>
+
+
+      <div id="product-page-item-div">
+      </div>
+    </div>
+    <hr>
+
+    <div id="product-page-list">
+
+      <div>
+        <button> <span class="arrow">
+            < </span> </button>
+        <button>1</button>
+        <button>2</button>
+        <button>3</button>
+        <button>4</button>
+        <button>5</button>
+        <button> . . .</button>
+        <button>211</button>
+        <button> <span class="arrow"> > </span> </button>
+      </div>
+    </div>
+
+    <div class="endproduct">
+      <div class="dropdiv">
+        <div style="margin-right: 1rem;">
+          <img src="http://ak1.ostkcdn.com/img/mxc/coop_pb_39947425_S.jpg?imwidth=183" alt="">
+        </div>
+        <div style="padding: 10px; ">
+          <h4>Becky Cameron</h4>
+          <h2>Extraa 15% Off</h2>
+          <p style="text-align: start;">Select Bedding</p>
+        </div>
+      </div>
+      <div class="dropdiv">
+        <div style="margin-right: 1rem;">
+          <img src="./IMAGES/carpet.jpg" alt="">
+        </div>
+        <div style="padding: 10px; ">
+          <h4>SAFAVIEH</h4>
+          <h2>Extraa 20% Off</h2>
+          <p style="text-align: start;">Select Carpet</p>
+        </div>
+      </div>
+
+    </div>
+
+    <div style="text-align: center; margin: 2.5rem 0px;">
+      <h1>Related Reviews </h1>
+    </div>
+
+    <div class="Reviews">
+
+      <div class="Reviewbox">
+
+        <div>
+          <img
+            src="https://ak1.ostkcdn.com/images/products/is/images/direct/8f36cdde5cce08c50075b5ead28c817b9710afdc/4480-Basic-Wool-Sofa.jpg?imwidth=118"
+            alt="">
         </div>
         <div>
-          <div>
+          <div style="padding-left: 10px;">
             <img src="https://ak1.ostkcdn.com/img/mxc/20200227_rating-star-full.svg" alt="star">
             <img src="https://ak1.ostkcdn.com/img/mxc/20200227_rating-star-full.svg" alt="star">
 
@@ -555,8 +527,9 @@
             <img src="https://ak1.ostkcdn.com/img/mxc/20200227_rating-star-empty.svg" alt="star">
 
           </div>
-          <div>
-            <p>Purchased this couch in 2020. It took the expected amount of time to arrive. Initially we loved this
+          <div style="text-align: left;">
+            <p style="text-align: left;">Purchased this couch in 2020. It took the expected amount of time to arrive.
+              Initially we loved this
               couch</p>
           </div>
 
@@ -564,7 +537,37 @@
 
       </div>
       <hr>
-      <div class="Reviewbox">
+      <div style="padding-left: 20px;" class="Reviewbox">
+
+        <div>
+          <img
+            src="
+        https://ak1.ostkcdn.com/images/products/is/images/direct/b81fc7e7bc1cbbf010cd1f32f935a5c6d9867d27/Luis-Mid-century-modern-3-Seater-Sofa.jpg?imwidth=118"
+            alt="">
+        </div>
+        <div>
+          <div style="padding-left: 10px;">
+            <img src="https://ak1.ostkcdn.com/img/mxc/20200227_rating-star-full.svg" alt="star">
+            <img src="https://ak1.ostkcdn.com/img/mxc/20200227_rating-star-full.svg" alt="star">
+
+            <img src="https://ak1.ostkcdn.com/img/mxc/20200227_rating-star-full.svg" alt="star">
+
+            <img src="https://ak1.ostkcdn.com/img/mxc/20200227_rating-star-empty.svg" alt="star">
+
+            <img src="https://ak1.ostkcdn.com/img/mxc/20200227_rating-star-empty.svg" alt="star">
+
+          </div>
+          <div>
+            <p style="text-align: left;">Purchased this couch in 2020. It took the expected amount of time to arrive.
+              Initially we loved this
+              couch</p>
+          </div>
+
+        </div>
+
+      </div>
+      <hr>
+      <div style="padding-left: 20px;" class="Reviewbox">
 
         <div>
           <img
@@ -572,7 +575,7 @@
             alt="">
         </div>
         <div>
-          <div>
+          <div style="padding-left: 10px;">
             <img src="https://ak1.ostkcdn.com/img/mxc/20200227_rating-star-full.svg" alt="star">
             <img src="https://ak1.ostkcdn.com/img/mxc/20200227_rating-star-full.svg" alt="star">
 
@@ -584,7 +587,8 @@
 
           </div>
           <div>
-            <p>Purchased this couch in 2020. It took the expected amount of time to arrive. Initially we loved this
+            <p style="text-align: left;">Purchased this couch in 2020. It took the expected amount of time to arrive.
+              Initially we loved this
               couch</p>
           </div>
 
@@ -592,74 +596,93 @@
 
       </div>
 
-  </div>
+    </div>
 
-  <div style="display: flex;justify-content: center;font-size: 22px; font-weight: 400; color: rgb(47, 51, 55);">
-    <p>How would you rate your search experience?</p>
-  </div>
+    <div id="exeperience">
+      <div style="display: flex;justify-content: center;font-size: 22px; font-weight: 400; color: rgb(47, 51, 55);">
+        <p>How would you rate your search experience?</p>
+      </div>
 
-  <div style="display: flex; justify-content: center; margin-bottom: 3rem;">
-    <img src="https://cdn-icons-png.flaticon.com/128/158/158434.png" style="width: 40px; margin-left: 0.8rem;" alt="">
-    <img src="https://cdn-icons-png.flaticon.com/128/158/158435.png" style="width: 40px; margin-left: 0.8rem;" alt="">
+      <div style="display: flex; justify-content: center; margin-bottom: 3rem;">
+        <img src="https://cdn-icons-png.flaticon.com/128/158/158434.png" style="width: 40px; margin-left: 0.8rem;"
+          alt="">
+        <img src="https://cdn-icons-png.flaticon.com/128/158/158435.png" style="width: 40px; margin-left: 0.8rem;"
+          alt="">
 
-    <img src="https://cdn-icons-png.flaticon.com/128/158/158407.png" style="width: 40px; margin-left: 0.8rem;" alt="">
+        <img src="https://cdn-icons-png.flaticon.com/128/158/158407.png" style="width: 40px; margin-left: 0.8rem;"
+          alt="">
 
-    <img src="https://cdn-icons-png.flaticon.com/128/2274/2274528.png" alt="" style="width: 40px; margin-left: 0.8rem;">
-    <img src="https://cdn-icons-png.flaticon.com/128/1441/1441204.png" style="width: 40px; margin-left: 0.8rem;" alt="">
+        <img src="https://cdn-icons-png.flaticon.com/128/2274/2274528.png" alt=""
+          style="width: 40px; margin-left: 0.8rem;">
+        <img src="https://cdn-icons-png.flaticon.com/128/1441/1441204.png" style="width: 40px; margin-left: 0.8rem;"
+          alt="">
 
 
-  </div>
-
-  <div>
-    <button id="wishlistButton">Add to Wishlist</button>
-  </div>
+      </div>
+    </div>
   </main>
-  <div id="footer">
-    <div>
-      <p> MY ACCOUNT</p>
-      <a href="https://www.overstock.com/myaccount?myacckey=order_info">Orders & Return </a>
-      <a href="https://www.overstock.com/5522/static.html">Email Prefrences</a>
-      <a href="https://www.overstock.com/myaccount?myacckey=account_overview">Account Setting </a>
-    </div>
-    <div>
-      <p> LETS US HELP</p>
-      <a href="https://help.overstock.com/help/s/article/International-Customer-Care">Contact Customer Care</a>
-      <a href="https://overstock.force.com/help/s/article/International-Order-Shipping-Information">Shipping Information
-      </a>
-      <a href="https://help.overstock.com/help/s/article/International-Returns">Return Policy</a>
-      <a href="https://help.overstock.com/help/s/article/International-Help-Home">International Help </a>
-      <a href="https://www.overstock.com/accessibility">Accessibility</a>
-    </div>
-    <div>
-      <p> COMPANY INFORMATION</p>
-      <a href="">About Overstock <span id="logofont">TM</span></a>
-      <a href="">Contact Us </a>
-      <a href="">Career</a>
-      <a href="">Investor Relations</a>
-      <a href="">Sell Your Products</a>
-      <a href="">Supply Chain Transparency</a>
-    </div>
-    <div>
-      <p> MORE WAYS TO SHOP</p>
-      <a href="">Tips & ideas</a>
-      <a href="">Deals </a>
-      <a href="">Clearance</a>
-      <a href="">New Arrivals</a>
-    </div>
+
+  <!-- ProductMain ends here -->
 
 
-    <div id="lastDivFooter">
+
+  <!-- Footer starts here -->
+  <footer>
+    <div id="footer-up">
       <div>
-        © Copyright 2023, Overstock.com®, Inc.<br>
+        <div>MY ACCOUNT</div>
+        <a href="https://www.overstock.com/myaccount?myacckey=order_info">Orders & Return
+        </a>
+        <a href="https://www.overstock.com/5522/static.html">Email Prefrences</a>
+        <a href="https://www.overstock.com/myaccount?myacckey=account_overview">Account Setting
+        </a>
+      </div>
+      <div>
+        <div>LETS US HELP</div>
+        <a href="https://help.overstock.com/help/s/article/International-Customer-Care">Contact Customer Care</a>
+        <a href="https://overstock.force.com/help/s/article/International-Order-Shipping-Information">Shipping
+          Information
+        </a>
+        <a href="https://help.overstock.com/help/s/article/International-Returns">Return Policy</a>
+        <a href="https://help.overstock.com/help/s/article/International-Help-Home">International Help
+        </a>
+        <a href="https://www.overstock.com/accessibility">Accessibility</a>
+      </div>
+      <div>
+        <div>COMPANY INFORMATION</div>
+        <a href="">About Overstock <span id="logofont">TM</span></a>
+        <a href="">Contact Us </a>
+        <a href="">Career</a>
+        <a href="">Investor Relations</a>
+        <a href="">Sell Your Products</a>
+        <a href="">Supply Chain Transparency</a>
+      </div>
+      <div>
+        <div>MORE WAYS TO SHOP</div>
+        <a href="">Tips & ideas</a>
+        <a href="">Deals </a>
+        <a href="">Clearance</a>
+        <a href="">New Arrivals</a>
+      </div>
+    </div>
+
+    <div id="legal">
+      <div id="legal-left">
+        © Copyright 2023, Overstock.com®, Inc.<br />
         799 Coliseum Way Midvale, UT 84047 | 1-800-843-2446
       </div>
-      <div>
-        <a style="color: white;" href="">Privacy Policy</a>
-        <a style="color: white;" href="">Terms & Condition </a>
-        <a style="color: white;" href="">*Promotion Terms</a>
-        <a style="color: white;" href="">Ship to : <span> India</span></a>
+      <div id="legal-right">
+        <a style="color: white" href="">Privacy Policy</a>
+        <a style="color: white" href="">Terms & Condition </a>
+        <a style="color: white" href="">*Promotion Terms</a>
+        <a style="color: white" href="">Ship to : <span> India</span></a>
       </div>
     </div>
+    </div>
+  </footer>
+  <!-- Footer ends here -->
+
+
 </body>
 <script src="ProductMain.js"></script>
 
