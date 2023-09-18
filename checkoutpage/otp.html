@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OTP Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f7f7f7;
+        }
+
+        .otp-container {
+            text-align: center;
+            background-color: #ffffff;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        #otpInput {
+            font-size: 14px;
+            padding: 8px 22px;
+            width: 100px;
+            text-align: start;
+        }
+        #phoneNumber{
+            font-size: 14px;
+            padding: 8px 23px;
+            width: 100px;
+            text-align: start;
+        }
+
+        .otp-button {
+            font-size: 16px;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        /* Popup Styling */
+        .popup {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+            text-align: center;
+            padding: 10px;
+            z-index: 9999;
+        }
+
+        .popup.show {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="otp-container">
+        <h2>Enter Your Phone Number</h2>
+        <input type="text" id="phoneNumber" placeholder="Enter phone number">
+        <button class="otp-button" onclick="requestOTP()">Get OTP</button>
+        <div id="otpInputContainer" style="display: none;">
+            <h2>Enter the OTP</h2>
+            <input type="text" id="otpInput" maxlength="6" placeholder="Enter OTP">
+            <button class="otp-button" onclick="submitOTP()">Submit OTP</button>
+        </div>
+    </div>
+
+    <!-- Popup Message -->
+    <div id="popupMessage" class="popup"></div>
+
+    <script>
+        // Use a variable to store the generated OTP
+        var generatedOTP;
+
+        function showPopup(message) {
+            const popup = document.getElementById("popupMessage");
+            popup.innerText = message;
+            popup.classList.add("show");
+            setTimeout(function () {
+                popup.classList.remove("show");
+            }, 3000);
+        }
+
+        function requestOTP() {
+            const phoneNumber = document.getElementById("phoneNumber").value;
+            if (phoneNumber.trim() === "") {
+                showPopup("Please enter a valid phone number.");
+                return;
+            }
+
+            // Here, you can replace this with an actual OTP generation and sending mechanism.
+            // For the sake of the example, we'll simulate a generated OTP.
+            generatedOTP = generateOTP();
+
+            // Display the OTP input field
+            const otpInputContainer = document.getElementById("otpInputContainer");
+            otpInputContainer.style.display = "block";
+
+            // Show the OTP in the popup (for demonstration purposes)
+            showPopup("Your OTP is: " + generatedOTP);
+        }
+
+        function submitOTP() {
+            const enteredOTP = document.getElementById("otpInput").value;
+            // Compare the entered OTP with the generated OTP
+            if (enteredOTP === generatedOTP) {
+                // OTP is correct, redirect to the next page
+                window.location.href = "./complete.html";
+            } else {
+                showPopup("Invalid OTP. Please try again.");
+            }
+        }
+
+        function generateOTP() {
+            // Generate a random 6-digit OTP
+            return Math.floor(100000 + Math.random() * 900000).toString();
+        }
+    </script>
+</body>
+</html>
