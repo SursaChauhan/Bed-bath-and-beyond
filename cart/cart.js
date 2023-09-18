@@ -9,6 +9,7 @@
   var totalQuantity = 0;
   
   // Loop through the cart items and create elements for each item
+  function cartRefresh{
   cartItems.forEach(function (item) {
       var existingCartItemDiv = cartContainer.querySelector(`[data-item="${item.name}"]`);
   
@@ -24,6 +25,8 @@
           // Update total quantity
           totalQuantity += item.quantity;
           totalPrice += item.price * item.quantity;
+          localStorage.setItem("totalPrice",JSON.stringify(totalPrice))
+              localStorage.setItem("totalQuantity",JSON.stringify(totalQuantity))
       } else {
           var cartItemDiv = document.createElement("div");
           cartItemDiv.classList.add("cart-item");
@@ -44,8 +47,39 @@
           var itemQuantity = document.createElement("p");
           itemQuantity.textContent = "Quantity: " + item.quantity;
           itemQuantity.classList.add("item-quantity");
+
+
+          var increaseButton = document.createElement("button");
+          increaseButton.textContent = "+";
+          increaseButton.classList.add("increase-button");
+
+          var decreaseButton = document.createElement("button");
+          decreaseButton.textContent = "-";
+          decreaseButton.classList.add("decrease-button");
+
+
+          increaseButton.addEventListener("click", function() {
+            // Increase the item quantity when the increase button is clicked
+            item.quantity++;
+            itemQuantity.textContent = "Quantity: " + item.quantity; // Update the displayed quantity
+            localStorage.setItem("cartItems",JSON.stringify(cartItems))
+            cartRefresh()
+          });
+          
+          // Add an event listener for the decrease button
+          decreaseButton.addEventListener("click", function() {
+            // Decrease the item quantity when the decrease button is clicked
+            if (item.quantity > 0) {
+              item.quantity--;
+              itemQuantity.textContent = "Quantity: " + item.quantity; // Update the displayed quantity
+            }
+          });
+        }
+          
+
+             cartItemDiv.append(img, itemName, itemPrice, itemQuantity, increaseButton, decreaseButton);
   
-          cartItemDiv.append(img, itemName,  itemPrice, itemQuantity);
+         // cartItemDiv.append(img, itemName,  itemPrice, itemQuantity);
   
           // Add a "Remove" button
           var removeButton = document.createElement("button");
@@ -117,6 +151,8 @@
               // Update total price and total quantity
               totalPrice -= item.price * item.quantity;
               totalQuantity -= item.quantity;
+              localStorage.setItem("totalPrice",JSON.stringify(totalPrice))
+              localStorage.setItem("totalQuantity",JSON.stringify(totalQuantity))
   
               // Update total price and total quantity in the HTML
               totalNumElement.textContent = totalQuantity;
@@ -124,3 +160,4 @@
           }
       }
   }
+  cartRefresh()
