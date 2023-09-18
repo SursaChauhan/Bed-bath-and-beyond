@@ -38,7 +38,7 @@ cursor: pointer;
 }
 .container{
   
-  height: 210px;
+  height: 230px;
   /* border: 1px solid red; */
   background-color: rgb(237, 236, 236);
    
@@ -133,7 +133,7 @@ width: 100%;
 #main > .account p{
     text-align: center;
     margin-top: 5%;
-    font-size: 15px;
+    font-size: 1.5rem;
     color: rgb(30, 29, 29);
 }
 #main > .account a{
@@ -199,7 +199,7 @@ width: 100%;
 }
 
 
-@media screen and (max-width: 668px) {
+ @media screen and (max-width: 680px) {
    
     #main {
         flex-direction: column;
@@ -217,14 +217,25 @@ width: 100%;
     #main>.Sign{
         margin: 8%;
     }
+    body{
+        background-image: none;
+      }
+
+      #login_page{
+        /* margin: 3% 5%; */
+        /* margin: auto; */
+        width: 100%;
+        padding: 1% ;
+        background-color: white;
+        border-radius: 3px;
+        /* border: 1px solid black;  */
+    }
 
 }
 
-#status{
-   color: blue;
-}
 
-@media screen and (max-width: 280px) {
+
+ @media screen and (max-width: 220px) {
    
     .container {
         margin: 2%;
@@ -236,9 +247,17 @@ width: 100%;
     }
     #login button{
         
-        width: 90%;
+        width: 100%;
     }
     #main>.Sign{
         margin: 8%;
     }
-} 
+    body{
+      background-image: none;
+    }
+}   
+
+/* Your existing CSS code */
+
+/* Your existing CSS code */
+

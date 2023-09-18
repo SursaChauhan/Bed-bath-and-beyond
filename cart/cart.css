@@ -508,7 +508,7 @@ ul li ul li {
 
 /* button part */
  button {
-  width: 15%;
+  width: 5%;
   background-color: #1a4e8a;
   color: #ffffff;
   padding: .7% 0;
@@ -519,8 +519,8 @@ ul li ul li {
   text-align: center;
   border-radius: 5px;
   cursor: pointer;
-  border: 1px solid red;
-  margin-right: .5%;
+  /* border: 1px solid red; */
+  
  
 }
 button:hover{
@@ -654,12 +654,18 @@ width:27%;
 .cart-item >h6 {
   font-size: 1rem;
 }
+ 
+.item-quantity{
+  padding: .5% .5%;
+}
 
-.cart-item p {
+.cart-item #pricee {
   font-size: 1rem;
-  margin-left: 20px;
-  padding: 0.5%;
+  /* margin-left: 2px; */
+ /* color: red; */
   text-align: center;
+  height: 20px;
+  width: 150px;
  /* border: 1px solid black; */
 }
 .dropdown-container {
