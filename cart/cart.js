@@ -10,7 +10,7 @@
   
   // Loop through the cart items and create elements for each item
   function cartRefresh(){
-    cartItems.length === 0 ? cartContainer.innerHTML = "<h2>Nothing in cart</h2>" :
+    cartItems.length === 0 ? (cartContainer.innerHTML = "<h2>Nothing in cart</h2>" , updatePrice()) :
     cartContainer.innerHTML = ""
   cartItems.forEach(function(item, ind){
       var cartItemDiv = document.createElement("div");
@@ -137,5 +137,6 @@ function updateQuantity(update, element, itemQuantity) {
       })
       localStorage.setItem("cartItems", JSON.stringify(cartItems))
       cartRefresh()
+      updatePrice()
   }
   cartRefresh()
