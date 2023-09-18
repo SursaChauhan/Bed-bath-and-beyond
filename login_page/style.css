@@ -8,7 +8,13 @@
 }
 body{
     width: 100%;
-    background-image: url(./image/screen.png.png);
+    background-size: cover;
+    background-attachment: fixed;
+    /* background-position: center; */
+    margin-bottom: 1%;
+    /* background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7))url(./image/screen.png); */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./image/screen.png);
+    
 }
 #cross{
 /* border: 1px solid red; */
@@ -218,7 +224,7 @@ width: 100%;
    color: blue;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 280px) {
    
     .container {
         margin: 2%;

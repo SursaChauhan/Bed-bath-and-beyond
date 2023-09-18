@@ -74,7 +74,7 @@ function signUp(event) {
             p.textContent = "Login Successful!!"
             p.style.color = "green" 
             setTimeout(() => {
-                 window.location.href = "index.html";
+                 window.location.href = "../index.html";
             }, 800);
 
             break;
@@ -124,7 +124,7 @@ document.addEventListener("DOMContentLoaded", function() {
     cross.addEventListener("click", function() {
        loginPage.style.display = "none";
     //    loginPage.parentNode.remove();
-     window.location.href = "index.html";
+     window.location.href = "../index.html";
     });
   });
   
