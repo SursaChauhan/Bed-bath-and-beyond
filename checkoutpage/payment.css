@@ -51,7 +51,7 @@ margin:0.8rem auto auto auto;
 /* border: 2px solid red; */
 }
 
-/* #firstname{
+/* .{
     width: fit-content;
    
 } */
@@ -137,12 +137,20 @@ margin:0.8rem auto auto auto;
     margin-bottom: 2rem;
     /* margin-top: 1rem; */
   }
+  .firstname{
+    width: 100%;
+       padding: 10px;
+       border: 1px solid #ccc;
+       border-radius: 4px;
+       position: relative; /* Add relative positioning */
+       background: transparent; /* Make the input background transparent */
+   
+     }
 
 
 
-
-  #firstname1{
- 
+  .firstname1{
+ width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;

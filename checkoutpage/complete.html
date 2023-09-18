@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Processing</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f8f9ff;
+        }
+
+        .processing-gif {
+            text-align: center;
+        }
+
+        .processing-gif img {
+            max-width: 80%;
+            max-height: 80%;
+        }
+
+        /* Hide the GIF after 5 seconds */
+        .hide-gif {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="processing-gif">
+        <img src="https://cdn.dribbble.com/users/5338201/screenshots/13804672/media/ce7ee9f720a36ac1a2782c79dc8f5728.gif" alt="Processing GIF" id="processingGif">
+        <a href="./succes.html"></a>
+    </div>
+
+    <script>
+        // Hide the GIF after 5 seconds and then redirect to the next page
+        setTimeout(function () {
+            const processingGif = document.getElementById("processingGif");
+            processingGif.classList.add("hide-gif");
+            window.location.href = './success.html'; // Replace "next-page.html" with the actual URL of the next page
+        }, 5000); // 5 seconds
+    </script>
+</body>
+</html>
