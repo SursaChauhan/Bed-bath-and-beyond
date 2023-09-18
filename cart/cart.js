@@ -9,26 +9,11 @@
   var totalQuantity = 0;
   
   // Loop through the cart items and create elements for each item
-  function cartRefresh{
-  cartItems.forEach(function (item) {
-      var existingCartItemDiv = cartContainer.querySelector(`[data-item="${item.name}"]`);
-  
-      if (existingCartItemDiv) {
-          // Product already exists in the cart, update quantity
-          var itemQuantityElement = existingCartItemDiv.querySelector(".item-quantity");
-          var existingQuantity = parseInt(itemQuantityElement.textContent.split(" ")[1]);
-          var newQuantity = existingQuantity + item.quantity;
-  
-          itemQuantityElement.textContent = "Quantity: " + newQuantity;
-  
-  
-          // Update total quantity
-          totalQuantity += item.quantity;
-          totalPrice += item.price * item.quantity;
-          localStorage.setItem("totalPrice",JSON.stringify(totalPrice))
-              localStorage.setItem("totalQuantity",JSON.stringify(totalQuantity))
-      } else {
-          var cartItemDiv = document.createElement("div");
+  function cartRefresh(){
+    cartItems.length === 0 ? cartContainer.innerHTML = "<h2>Nothing in cart</h2>" :
+    cartContainer.innerHTML = ""
+  cartItems.forEach(function(item, ind){
+      var cartItemDiv = document.createElement("div");
           cartItemDiv.classList.add("cart-item");
           cartItemDiv.setAttribute("data-item", item.name); // Set a data attribute for identification
   
@@ -45,7 +30,7 @@
           itemPrice.id="pricee";
   
           var itemQuantity = document.createElement("p");
-          itemQuantity.textContent = "Quantity: " + item.quantity;
+          itemQuantity.textContent = item.quantity;
           itemQuantity.classList.add("item-quantity");
 
 
@@ -58,35 +43,22 @@
           decreaseButton.classList.add("decrease-button");
 
 
-          increaseButton.addEventListener("click", function() {
-            // Increase the item quantity when the increase button is clicked
-            item.quantity++;
-            itemQuantity.textContent = "Quantity: " + item.quantity; // Update the displayed quantity
-            localStorage.setItem("cartItems",JSON.stringify(cartItems))
-            cartRefresh()
-          });
+          increaseButton.addEventListener("click", ()=>{updateQuantity(+1, item, itemQuantity)});
           
           // Add an event listener for the decrease button
-          decreaseButton.addEventListener("click", function() {
-            // Decrease the item quantity when the decrease button is clicked
-            if (item.quantity > 0) {
-              item.quantity--;
-              itemQuantity.textContent = "Quantity: " + item.quantity; // Update the displayed quantity
-            }
-          });
-        }
+          decreaseButton.addEventListener("click", ()=>{updateQuantity(-1, item, itemQuantity)})
           
 
-             cartItemDiv.append(img, itemName, itemPrice, itemQuantity, increaseButton, decreaseButton);
+             cartItemDiv.append(img, itemName, itemPrice, increaseButton, itemQuantity, decreaseButton);
   
          // cartItemDiv.append(img, itemName,  itemPrice, itemQuantity);
   
           // Add a "Remove" button
           var removeButton = document.createElement("button");
-      removeButton.textContent = "Remove";
-      removeButton.classList.add("remove-button");
-      removeButton.addEventListener("click", function () {
-          removeCartItem(item);
+        removeButton.textContent = "Remove";
+        removeButton.classList.add("remove-button");
+        removeButton.addEventListener("click", function () {
+          removeCartItem(item, ind);
       });
   
   
@@ -94,70 +66,96 @@
           cartContainer.appendChild(cartItemDiv);
   
           // Update total price and total quantity
-          totalPrice += item.price * item.quantity;
-          totalQuantity += item.quantity;
-      }
+        //   totalPrice += item.price * item.quantity;
+        //   totalQuantity += item.quantity;
+      
   
       // ... (existing code)
   });
+}
+function updateQuantity(update, element, itemQuantity) {
+    // Find the index of the item in the cartItems array
+    const itemIndex = cartItems.findIndex((item) => item.name === element.name && item.price === element.price);
+  
+    if (itemIndex !== -1) {
+      // Update the quantity
+      cartItems[itemIndex].quantity += update;
+  
+      // Check if the quantity is zero and remove the item if needed
+      if (cartItems[itemIndex].quantity === 0) {
+        cartItems.splice(itemIndex, 1);
+      }
+  
+      // Update the item quantity in the DOM
+      itemQuantity.innerText = cartItems[itemIndex].quantity;
+  
+      // Update the total price and quantity
+      updatePrice();
+  
+      // Store the updated cartItems in local storage
+      localStorage.setItem("cartItems", JSON.stringify(cartItems));
+    }
+  }
+  
+
+// function updateQuantity(update, element, itemQuantity){
+//     cartItems.forEach(function(ele,ind){
+//         if(ele.name == element.name && ele.price == element.price){
+//             ele.quantity += update
+//             if(ele.quantity === 0)
+//             removeCartItem(ind)
+//             itemQuantity.innerText = ele.quantity
+//         }
+//     })
+//     updatePrice()
+
+//     localStorage.setItem("cartItems" , JSON.stringify(cartItems))
+// }
   
   // Store the calculated total price in local storage
-  localStorage.setItem("totalPrice", totalPrice);
-  
-  // Update total price and total quantity in the HTML
-  var totalNumElement = document.getElementById("total-num");
-  totalNumElement.textContent = totalQuantity;
-  
-  var totalPriceElement = document.getElementById("total-price");
-  totalPriceElement.textContent = totalPrice.toFixed(2); // Format to 2 decimal places
-  
-  // Check if coupon code is applied
-  var couponCode = "MASAI30"; // Coupon code for 20% discount
-  var isCouponApplied = false; // Flag to track coupon application
-  
-  // Function to apply coupon code
-  function applyCoupon() {
-      if (isCouponApplied) return; // Coupon already applied
-  
-      // Apply coupon code logic
-      // Apply coupon code logic
-  if (couponCode === "MASAI30") {
-      totalPrice *= 0.8; // Apply 20% discount
-      isCouponApplied = true;
-      localStorage.setItem("isCouponApplied", true);
-  
+//   localStorage.setItem("totalPrice", totalPrice);
+
+  function updatePrice(){
+    var totalQuantity = 0, totalPrice = 0
+    cartItems.length === 0 ?
+    (totalQuantity = 0 , totalPrice = 0) :
+    cartItems.forEach(ele=>{
+        totalQuantity +=ele.quantity
+        totalPrice += (ele.quantity * ele.price)
+    })
+    document.getElementById("total-num").textContent = totalQuantity
+    document.getElementById("total-price").textContent = totalPrice.toFixed(2)
+
+    var couponButton = document.getElementById("promoC");
+    var isCouponApplied = (localStorage.getItem("isCouponApplied"))
+    couponButton.addEventListener("submit", 
+    function (e) {
+        e.preventDefault()
+        var target = e.target
+        var couponCode = target.querySelector("inputC")
+        if (isCouponApplied) return; // Coupon already applied
+          
+              
+              // Apply coupon code logic
+        if (couponCode === "MASAI30") {
+            totalPrice *= 0.7; // Apply 20% discount
+            totalPrice = totalPrice.toFixed(2)
+            document.getElementById("total-price").textContent = totalPrice
+
+
+            isCouponApplied = true;
+            localStorage.setItem("isCouponApplied", true);
+        }
+    })
   }
+  updatePrice()
   
-      // Update total price in the HTML
-      totalPriceElement.textContent = totalPrice.toFixed(2); // Format to 2 decimal places
-  }
   
-  // Button to apply coupon code
-  var couponButton = document.getElementById("promoC");
-  couponButton.addEventListener("click", applyCoupon);
-  function removeCartItem(item) {
-      // Find the cart item element
-      var cartItemDiv = cartContainer.querySelector(`[data-item="${item.name}"]`);
-      if (cartItemDiv) {
-          // Remove the item's HTML element from the cart display
-          cartContainer.removeChild(cartItemDiv);
-  
-          // Remove the item from cartItems array
-          var itemIndex = cartItems.indexOf(item);
-          if (itemIndex !== -1) {
-              cartItems.splice(itemIndex, 1);
-              localStorage.setItem("cartItems", JSON.stringify(cartItems));
-  
-              // Update total price and total quantity
-              totalPrice -= item.price * item.quantity;
-              totalQuantity -= item.quantity;
-              localStorage.setItem("totalPrice",JSON.stringify(totalPrice))
-              localStorage.setItem("totalQuantity",JSON.stringify(totalQuantity))
-  
-              // Update total price and total quantity in the HTML
-              totalNumElement.textContent = totalQuantity;
-              totalPriceElement.textContent = totalPrice.toFixed(2); // Format to 2 decimal places
-          }
-      }
+  function removeCartItem(item, ind) {
+      cartItems = cartItems.filter((e, index)=>{
+        return ind != index
+      })
+      localStorage.setItem("cartItems", JSON.stringify(cartItems))
+      cartRefresh()
   }
   cartRefresh()
