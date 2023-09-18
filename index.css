@@ -618,31 +618,7 @@ footer a{
   height: 100%;
   object-fit: fill;
 }
-
 /* /css for manual slide navigation/ */
-
-.navigation-manual {
-  position: absolute;
-  width: 100%;
-  margin-top: -25px;
-  display: flex;
-  justify-content: center;
-}
-
-.manual-btn {
-  padding: 3.9px;
-  border-radius: 10px;
-  cursor: pointer;
-  transition: 1s;
-}
-
-.manual-btn:not(:last-child) {
-  margin-right: 10px;
-}
-
-.manual-btn:hover {
-  background: gray;
-}
 
 #radio1:checked~.first {
   margin-left: 0;
@@ -664,46 +640,7 @@ footer a{
   margin-left: -80%;
 }
 
-/* /css for automatic navigation/ */
 
-.navigation-auto {
-  position: absolute;
-  display: flex;
-  width: 100%;
-  justify-content: center;
-  margin-top: 475px;
-}
-
-.navigation-auto div {
-  border: 2px solid rgba(211, 211, 211, 0.651);
-  padding: 1.9px;
-  border-radius: 10px;
-  transition: 1s;
-}
-
-.navigation-auto div:not(:last-child) {
-  margin-right: 10px;
-}
-
-#radio1:checked~.navigation-auto .auto-btn1 {
-  background: gray;
-}
-
-#radio2:checked~.navigation-auto .auto-btn2 {
-  background: gray;
-}
-
-#radio3:checked~.navigation-auto .auto-btn3 {
-  background: gray;
-}
-
-#radio4:checked~.navigation-auto .auto-btn4 {
-  background: gray;
-}
-
-#radio5:checked~.navigation-auto .auto-btn5 {
-  background: gray;
-}
 @media screen and (width<1200px) {
   #midPart1 h2 {
     font-size: 1.5rem;
