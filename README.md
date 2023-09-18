@@ -12,7 +12,7 @@ It was during the final week which is depicted as the construct week. We have do
 
 # <span style="color:red"> About Website: </span>
 
- [bed bath and beyond](https://effortless-raindrop-0b52c3.netlify.app/),Bed Bath & Beyond is a popular retail chain in the United States that specializes in home goods and furnishings. The Bed Bath & Beyond website serves as an online platform where customers can browse and purchase a wide range of products for their homes.
+ [bed bath and beyond](https://6508a49b30d1f540fa8a9bb8--gleaming-chaja-4ac78f.netlify.app/),Bed Bath & Beyond is a popular retail chain in the United States that specializes in home goods and furnishings. The Bed Bath & Beyond website serves as an online platform where customers can browse and purchase a wide range of products for their homes.
  
 
 # <span style="color:red"> Tech Stack Used: </span>
@@ -47,25 +47,30 @@ This entire journey of making the project was awesome. We have learned lots of t
 
 - ## <span style="color:blue"> Home Page </span>
 
-<img width="377" alt="Home page" src="">
+<img width="377" alt="Home page" src="./IMAGES/HomePage.png">
 
+ - ## <span style="color:blue"> Login Page</span>
+
+ <img width="391" alt="zms footer" src="./IMAGES/L1.png">
 
 
 - ## <span style="color:blue"> Product Pages</span>
 
-<img width="400" alt="zms 1" src="">
-<img width="400" alt="zms 1" src="">
-<img width="400" alt="zms 1" src="">
+<img width="400" alt="zms 1" src="./IMAGES/P1.png">
+<img width="400" alt="zms 1" src="./IMAGES/P2.png">
+<img width="400" alt="zms 1" src="./IMAGES/P3.png">
+
+- ## <span style="color:blue"> Cart Page</span>
+
+ <img width="391" alt="zms footer" src="./IMAGES/C1.png">
 
 
 - ## <span style="color:blue"> Payment Page</span>
 
- <img width="391" alt="zms footer" src="">
+ <img width="391" alt="zms footer" src="./IMAGES/Pay1.png">
  
 
- - ## <span style="color:blue"> Login Page</span>
 
- <img width="391" alt="zms footer" src="">
  
 <br>
  <hr>
@@ -89,11 +94,17 @@ We are very thankful for the support of my teammates and instructor for the comp
 
 ## <span style="color:rgb(255, 200, 0)"> Team Members: </span>
 
-- ## Arti Soni
-[GitHub](https://github.com/artisonii)
-
-- ## Yuvraj Jangir
-[GitHub](https://github.com/yuvrajjangir)
-
 - ## Surendra Singh
 [GitHub](https://github.com/SursaChauhan)
+
+- ## Swati Mandal
+[GitHub](https://github.com/swatii23)
+
+- ## Md Sajid
+[GitHub](https://github.com/Sajid788)
+
+- ## Madhukar Kumar
+[GitHub](https://github.com/madhukarkr2468)
+
+- ## Jatin
+[GitHub](https://github.com/Jatin-Rohilla)
