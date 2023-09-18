@@ -284,9 +284,11 @@
     <div id="mainPrice-cart">
       <p>Total Items :<span id="total-num">0</span></p>
       <h5>Total Price : $ <span id="total-price">0</span></h5>
-      <div>
+      <div id="promo">
+        <form>
         <input id="inputC" placeholder="Add a Promo" />
-        <button id="promoC">Apply</button>
+        <input type="submit" value="Apply" id="promoC">
+      </form>
       </div>
       <button onclick="window.location.href = '../checkoutpage/payment.html'  "id="paymentC"><i class="fa-solid fa-lock" ></i>  Checkout</button>
     </div>

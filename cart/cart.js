@@ -65,12 +65,7 @@
           cartItemDiv.appendChild(removeButton);
           cartContainer.appendChild(cartItemDiv);
   
-          // Update total price and total quantity
-        //   totalPrice += item.price * item.quantity;
-        //   totalQuantity += item.quantity;
-      
-  
-      // ... (existing code)
+          
   });
 }
 function updateQuantity(update, element, itemQuantity) {
@@ -98,22 +93,6 @@ function updateQuantity(update, element, itemQuantity) {
   }
   
 
-// function updateQuantity(update, element, itemQuantity){
-//     cartItems.forEach(function(ele,ind){
-//         if(ele.name == element.name && ele.price == element.price){
-//             ele.quantity += update
-//             if(ele.quantity === 0)
-//             removeCartItem(ind)
-//             itemQuantity.innerText = ele.quantity
-//         }
-//     })
-//     updatePrice()
-
-//     localStorage.setItem("cartItems" , JSON.stringify(cartItems))
-// }
-  
-  // Store the calculated total price in local storage
-//   localStorage.setItem("totalPrice", totalPrice);
 
   function updatePrice(){
     var totalQuantity = 0, totalPrice = 0
@@ -126,13 +105,14 @@ function updateQuantity(update, element, itemQuantity) {
     document.getElementById("total-num").textContent = totalQuantity
     document.getElementById("total-price").textContent = totalPrice.toFixed(2)
 
-    var couponButton = document.getElementById("promoC");
+    
     var isCouponApplied = (localStorage.getItem("isCouponApplied"))
-    couponButton.addEventListener("submit", 
+    document.getElementById("promo").addEventListener("submit", 
     function (e) {
         e.preventDefault()
         var target = e.target
-        var couponCode = target.querySelector("inputC")
+        var couponCode = target.querySelector("#inputC").value
+        console.log(couponCode)
         if (isCouponApplied) return; // Coupon already applied
           
               
