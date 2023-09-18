@@ -84,7 +84,7 @@ div7.style.backgroundColor="#46a1e3"
 
 div7.addEventListener("click",function(event){
     window.location.href="./otp.html"
-})
+});
 const lockElement = document.createElement('p');
 lockElement.textContent = `Submit Order`;
 

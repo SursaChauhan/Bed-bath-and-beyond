@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <link rel="stylesheet" href="./item.css">
+   <link rel="stylesheet" href="../index.css">
+   <link rel="stylesheet" href="./footer.css">
+</head>
+
+<body>
+
+
+   <!-- Navbar starts here -->
+   <header>
+      <div id="ship">
+         <p>Ship to:</p>
+         <br />
+         <img src="../IMAGES/india-image.png" />
+         <p>INDIA</p>
+      </div>
+      <div id="navbarstart">
+         <img src="../IMAGES/logo.png" alt="logo" />
+         <div>
+            <input placeholder="Search...everything you find ship for free " />
+            <button id="navbarSearchBtn" type="submit">
+               <svg width="22" height="22" viewBox="0 0 24 24" stroke="#ffffff" fill="#FFFFFF">
+                  <title>Search</title>
+                  <path d="M22 22l-6.344-6.344M10 18a8 8 0 100-16 8 8 0 000 16z" stroke="inherit" fill="none"
+                     stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+               </svg>
+            </button>
+         </div>
+         <div>
+            <svg class="UserDropDowns_icon_08" width="20" height="20" viewBox="0 0 24 24" stroke="#2F3337"
+               fill="#2F3337">
+               <title>User</title>
+               <path d="M1 23c0-5.523 4.477-10 10-10h2c5.523 0 10 4.477 10 10M12 13a6 6 0 100-12 6 6 0 000 12z"
+                  stroke="inherit" fill="none" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"
+                  stroke-linejoin="round"></path>
+            </svg>
+            <br />
+            <a href="index.html">Account</a>
+         </div>
+         <div>
+            <svg class="UserDropDowns_icon_06" width="22" height="22" viewBox="0 0 24 24" stroke="#2F3337"
+               fill="#2F3337">
+               <title>Heart</title>
+               <path d="M21.241 3.757A6 6 0 0012 4.684a6 6 0 10-9.242 7.558l9.241 9.243 9.243-9.243a6 6 0 000-8.485z"
+                  fill="none" stroke="inherit" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"
+                  stroke-linejoin="round"></path>
+            </svg>
+            <br />
+            <a href="index.html">List</a>
+         </div>
+         <div>
+            <div id="cartCount"></div>
+            <svg class="UserDropDowns_icon_06" width="22" height="21" viewBox="0 0 24 24" stroke="#2F3337"
+               fill="#2F3337">
+               <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M7.174 14.4L5.208.833C5.14.356 4.697 0 4.174 0h-3.13C.466 0 0 .43 0 .96s.467.96 1.043.96H3.26l1.966 13.567c.07.477.512.833 1.035.833h14.608c.498 0 .926-.323 1.024-.772l2.087-9.6c.113-.52-.254-1.025-.819-1.13-.565-.103-1.115.234-1.228.754L20.014 14.4H7.174zm.13 9.6a2.087 2.087 0 100-4.174 2.087 2.087 0 000 4.174zm14.61-2.087a2.087 2.087 0 11-4.175 0 2.087 2.087 0 014.174 0z"
+                  stroke="none" fill="inherit"></path>
+            </svg>
+
+            <br />
+            <a href="../cart/cart.html"> Cart </a>
+         </div>
+      </div>
+      <div id="navbaritems">
+         <ul style="align-self: center; align-items: center;">
+            <li>
+               <a href="">Furniture</a>
+               <ul>
+                  <li><a href="">Living Room Furniture</a></li>
+                  <li><a href="">Patio Furniture</a></li>
+                  <li><a href=""> Bedroom Furniture</a></li>
+                  <li><a href=""> Office Furniture</a></li>
+                  <li><a href="">Living Room Furniture</a></li>
+                  <li><a href="">Patio Furniture</a></li>
+                  <li><a href=""> Bedroom Furniture</a></li>
+                  <li><a href=""> Office Furniture</a></li>
+               </ul>
+            </li>
+            <li>
+               <a href="">Outdoors</a>
+               <ul>
+                  <li><a href="">Patio Furniture</a></li>
+                  <li><a href="">Garden </a></li>
+                  <li><a href=""> Outdoor Decor </a></li>
+                  <li><a href=""> Grills and Outdoor Cooking </a></li>
+                  <li><a href=""> Outdoor Shades and Structures </a></li>
+                  <li><a href="">Sport and Outdoor </a></li>
+                  <li><a href=""> Bedroom Furniture</a></li>
+                  <li><a href=""> Office Furniture</a></li>
+               </ul>
+            </li>
+            <li>
+               <a href="">Rugs</a>
+               <ul>
+                  <li><a href="">Area Rugs By Size </a></li>
+                  <li><a href="">Trending Rugs</a></li>
+                  <li><a href=""> Area Rugs by Color </a></li>
+                  <li><a href=""> Area Rugs by Style </a></li>
+                  <li><a href=""> Rugs By Types </a></li>
+               </ul>
+            </li>
+            <li>
+               <a href="">Decor</a>
+               <ul>
+                  <li><a href="">Mirrros </a></li>
+                  <li><a href="">Faux Plants and Flowers </a></li>
+                  <li><a href=""> Decorative Accessories </a></li>
+                  <li><a href=""> Window Treatments </a></li>
+                  <li><a href=""> Arts </a></li>
+                  <li><a href="">Throw Pillow </a></li>
+               </ul>
+            </li>
+            <li>
+               <a href="">Bedding</a>
+               <ul>
+                  <li><a href="">Bedding Sets</a></li>
+                  <li><a href="">Bedding Essentials </a></li>
+                  <li><a href="">Bed Sheets and Pollowcases</a></li>
+                  <li><a href=""> Window Treatments </a></li>
+                  <li><a href=""> Mattress Pads and Toppers </a></li>
+                  <li><a href="">Mattress</a></li>
+                  <li><a href="">Blankets</a></li>
+               </ul>
+            </li>
+            <li>
+               <a href="">Home</a>
+               <ul>
+                  <li><a href="">Kitchens </a></li>
+                  <li><a href="">Flooring and Wall </a></li>
+                  <li><a href="">Bathroom </a></li>
+                  <li><a href=""> Vacuums </a></li>
+                  <li><a href=""> Storage and Organization </a></li>
+                  <li><a href="">Home Essentials</a></li>
+               </ul>
+            </li>
+            <li>
+               <a href="">Kitchen</a>
+               <ul>
+                  <li><a href="">Dinnerware </a></li>
+                  <li><a href="">Cookware and Bakeware </a></li>
+                  <li><a href="">Kitchen Furniture</a></li>
+                  <li><a href=""> Kitchen Appliances </a></li>
+                  <li><a href=""> Coffee and Tea</a></li>
+                  <li><a href=""> Kitchen Storage</a></li>
+               </ul>
+            </li>
+            <li>
+               <a href="">Lighting</a>
+               <ul>
+                  <li><a href="">Celing Lights</a></li>
+                  <li><a href="">Ceiling Fans </a></li>
+                  <li><a href="">Wall Lighting </a></li>
+                  <li><a href=""> Outdoors Lighting</a></li>
+                  <li><a href=""> Lamps and Lamps Shades </a></li>
+                  <li><a href="">Kitchen and Bath Lighting</a></li>
+               </ul>
+            </li>
+            <li>
+               <a href="">Kids & Baby</a>
+               <ul>
+                  <li><a href="">Kids Furniture</a></li>
+                  <li><a href="">Baby Furniture</a></li>
+                  <li><a href="">Kids Bedding</a></li>
+                  <li><a href=""> Nursery Decor</a></li>
+                  <li><a href=""> Kids Bath </a></li>
+                  <li><a href="">Baby bedding </a></li>
+               </ul>
+            </li>
+            <li>
+               <a href="">Bath</a>
+               <ul>
+                  <li><a href=""> Bathroom Rugs and Bath Mats</a></li>
+                  <li><a href=""> Bathroom Accessories</a></li>
+                  <li><a href=""> Towels</a></li>
+                  <li><a href=""> Shower Curtains and Accessories</a></li>
+                  <li><a href=""> Bathroom Renovation </a></li>
+               </ul>
+            </li>
+            <li>
+               <a href="">More</a>
+               <ul>
+                  <li><a href="">Holiday</a></li>
+                  <li><a href="">Large Appliances</a></li>
+                  <li><a href="">Gifting </a></li>
+                  <li><a href=""> Excerise Equipments </a></li>
+                  <li><a href=""> Entryways</a></li>
+                  <li><a href="">Brand We Love </a></li>
+               </ul>
+            </li>
+            <li>
+               <a href="">Ideas</a>
+               <ul>
+                  <li><a href="">Holiday</a></li>
+                  <li><a href="">Large Appliances</a></li>
+                  <li><a href="">Gifting </a></li>
+                  <li><a href=""> Excerise Equipments </a></li>
+                  <li><a href=""> Entryways</a></li>
+                  <li><a href="">Brand We Love </a></li>
+               </ul>
+            </li>
+            <li>
+               <a href="" style="color: red">Sales & Deals</a>
+            </li>
+         </ul>
+      </div>
+   </header>
+   <!-- Navbar ends here -->
+
+
+   <!-- Item_Main starts here -->
+   <Main>
+      <div style="margin: 1.5rem 0px 1.5rem 1.9rem; font-size: 16px; font-weight: 500;  color: rgb(0, 0, 0);">
+         <Pre>Home Goods / Furniture / Living Room Furniture / Sofas & Couches</Pre>
+      </div>
+      <div id="firstcontainer">
+         <div class="page"></div>
+
+         <div class="detailsdiv">
+            <div class="main-img">
+               <div class="firstimg"><a href="../cartpage/cart.html"></a></div>
+
+               <div altimg="altimg" style="background-color: red; height: 300px ; width: 300px;"></div>
+
+            </div>
+            <div class="otherdata"></div>
+
+         </div>
+
+      </div>
+      <hr style="opacity:0.5;">
+      <div id="secondcontainer">
+         <div style="margin-left: 1rem;">
+            <h2>Product Overview</h2>
+         </div>
+         <div>
+
+
+            <div style="display: flex; margin-left: 1rem;">
+               <div style="width: 45%; justify-content: center; margin:1rem 4rem 2rem 1.5rem;">
+
+                  <button
+                     style="border: hidden;font-size: 24px;font-weight: 500; background-color: white;">Description</button>
+                  <div style="margin:1rem 0 ;">
+                  
+                  </div>
+                  <div>
+
+                     Blending classic and contemporary, this transitional sofa accents your approachable living space.
+                     In
+                     light grey with print accent pillows, it features sleek rolled arms and box seat cushions that
+                     embrace
+                     inviting, plush comfort and understated style.
+
+                     <br>
+                     <br>
+
+                     <b>Features :</b>
+                     <br>
+                     <ul>
+                        <li> Includes one (1) sofa</li>
+                        <li> <b>Soft Textures</b> - The polyester fabric is smooth to the touch, making this a
+                           comfortable
+                           piece to lounge and relax on</li>
+                        <li>Upholstery color: Grey</li>
+
+                        <li>Upholstery material: Linen-like</li>
+                        <li>Upholstery fill: Foam</li>
+                        <li>Transitional style</li>
+                        <li>Lawson design with rolled arms</li>
+                        <li>Plush box seat cushions</li>
+                        <li>Loose back and print accent pillows</li>
+                        <li>Solid wood frame</li>
+                        <li>Light grey linen-like fabric</li>
+                        <li>Constructed of solid wood, wood veneer</li>
+                        <li>Seats up to 3 people comfortably</li>
+                        <li>Proudly made in the USA</li>
+                     </ul>
+                  </div>
+
+
+               </div>
+
+               <div style="width: 45%; display: flex;flex-direction: column;">
+                  <button
+                     style="border: hidden;font-size: 24px;font-weight: 500; background-color: white;">Specifications</button>
+
+                  <div style="border: 1px solid gray; width: 100%; margin-top: 2rem; ">
+                     <div style="display: flex; width: 100%; align-items: center;">
+                        <div
+                           style="width: 20%; padding: 0.7rem 1rem; font-size: 16px; color: rgb(128,129,131); background-color: rgb(249,250,251);">
+                           Item </div>
+                        <div style=" padding: 0.7rem 1rem; font-size: 16px; color: rgb(128,129,131);">39700400</div>
+                     </div>
+                     <hr style="margin: 0;">
+                     <div style="display: flex; width: 100%; align-items: center;">
+                        <div
+                           style="width: 20%; padding: 0.7rem 1rem; font-size: 16px; color: rgb(128,129,131); background-color: rgb(249,250,251);">
+                           Assembled Dimensions</div>
+                        <div style=" padding: 0.7rem 1rem; font-size: 16px; color: rgb(128,129,131);">37 in. D X 87 in.
+                           W X
+                           38 in. H</div>
+                     </div>
+                     <hr style="margin: 0;">
+                     <div style="display: flex; width: 100%; align-items: center;">
+                        <div
+                           style="width: 20%; padding: 0.7rem 1rem; font-size: 16px; color: rgb(128,129,131); background-color: rgb(249,250,251);">
+                           Model Number</div>
+                        <div style=" padding: 0.7rem 1rem; font-size: 16px; color: rgb(128,129,131);">7628-UH</div>
+                     </div>
+                     <hr style="margin: 0;">
+                     <div style="display: flex; width: 100%; align-items: center;">
+                        <div
+                           style="width: 20%; padding: 0.7rem 1rem; font-size: 16px; color: rgb(128,129,131); background-color: rgb(249,250,251);">
+                           Warranty</div>
+                        <div style=" padding: 0.7rem 1rem; font-size: 16px; color: rgb(128,129,131);">
+                           1 year Limited Manufacturer</div>
+                     </div>
+                     <hr style="margin: 0;">
+                     <div style="display: flex; width: 100%; align-items: center;">
+                        <div
+                           style="width: 20%; padding: 0.7rem 1rem; font-size: 16px; color: rgb(128,129,131); background-color: rgb(249,250,251);">
+                           Estilo</div>
+                        <div style=" padding: 0.7rem 1rem; font-size: 16px; color: rgb(128,129,131);">De transición,
+                           Modern
+                           & Contemporary</div>
+                     </div>
+                     <hr style="margin: 0;">
+                     <div style="display: flex; width: 100%; align-items: center;">
+                        <div
+                           style="width: 20%; padding: 0.7rem 1rem; font-size: 16px; color: rgb(128,129,131); background-color: rgb(249,250,251);">
+                           Material</div>
+                        <div style=" padding: 0.7rem 1rem; font-size: 16px; color: rgb(128,129,131);">Wood, Fabric</div>
+                     </div>
+                     <hr style="margin: 0;">
+                     <div style="display: flex; width: 100%; align-items: center;">
+                        <div
+                           style="width: 20%; padding: 0.7rem 1rem; font-size: 16px; color: rgb(128,129,131); background-color: rgb(249,250,251);">
+                           Estampado
+                        </div>
+                        <div style=" padding: 0.7rem 1rem; font-size: 16px; color: rgb(128,129,131);">
+                           Sólido</div>
+                     </div>
+                     <hr style="margin: 0;">
+                     <div style="display: flex; width: 100%; align-items: center;">
+                        <div
+                           style="width: 20%; padding: 0.7rem 1rem; font-size: 16px; color: rgb(128,129,131); background-color: rgb(249,250,251);">
+                           Impresi&oacute;n</div>
+                        <div style=" padding: 0.7rem 1rem; font-size: 16px; color: rgb(128,129,131);">Sólido</div>
+                     </div>
+                     <hr style="margin: 0;">
+                     <div style="display: flex; width: 100%; align-items: center;">
+                        <div
+                           style="width: 20%; padding: 0.7rem 1rem; font-size: 16px; color: rgb(128,129,131); background-color: rgb(249,250,251);">
+                           Montaje</div>
+                        <div style=" padding: 0.7rem 1rem; font-size: 16px; color: rgb(128,129,131);">Requiere montaje
+                        </div>
+                     </div>
+                     <hr style="margin: 0;">
+                     <div style="display: flex; width: 100%; align-items: center;">
+                        <div
+                           style="width: 20%; padding: 0.7rem 1rem; font-size: 16px; color: rgb(128,129,131); background-color: rgb(249,250,251);">
+                           Arm Style</div>
+                        <div style=" padding: 0.7rem 1rem; font-size: 16px; color: rgb(128,129,131);">Rolled Arms</div>
+                     </div>
+
+
+
+                  </div>
+               </div>
+            </div>
+
+            <div style=" display: flex;justify-content: center;"><button
+                  style=" background-color: rgb(249,250,251);border-radius: 2rem; padding: 0.6rem 1.2rem; font-size: 13px; border: hidden; font-weight: 600; cursor: pointer;">Show
+                  More </button></div>
+            <hr style="opacity:0.5;">
+         </div>
+      </div>
+
+      <div style="display: flex; justify-content: space-between;">
+         <div style="display: flex;padding: 1rem 0;">
+            <span style="Font-size: 20px;Font-weight: 700; margin: 0 1.4rem 0 1rem;">Reviews</span>
+            <span style="margin: 0 0.2rem;"> <img src="https://ak1.ostkcdn.com/img/mxc/20200227_rating-star-empty.svg"
+                  alt="star">
+            </span>
+            <span style="margin: 0 0.2rem;"> <img src="https://ak1.ostkcdn.com/img/mxc/20200227_rating-star-empty.svg"
+                  alt="star">
+            </span>
+
+            <span style="margin: 0 0.2rem;"> <img src="https://ak1.ostkcdn.com/img/mxc/20200227_rating-star-empty.svg"
+                  alt="star">
+            </span>
+            <span style="margin: 0 0.2rem;"> <img src="https://ak1.ostkcdn.com/img/mxc/20200227_rating-star-empty.svg"
+                  alt="star">
+            </span>
+            <span style="margin: 0 0.2rem;"> <img src="https://ak1.ostkcdn.com/img/mxc/20200227_rating-star-empty.svg"
+                  alt="star">
+            </span>
+
+         </div>
+         <button
+            style="font-size: 16px;padding: 0;height: 37px; width:181px; margin:4px 15px ;background-color: white;border-radius: 5px;">Write
+            the First Review</button>
+      </div>
+      <hr style="opacity:0.5;">
+
+      <div style="display: flex; justify-content: space-between; padding: 1rem 0; height:2.1rem;">
+
+         <div>
+            <span style="Font-size: 20px;Font-weight: 700; margin: 0 1.4rem 0 1rem;">Questions & Answers</span>
+            <span style="Font-size: 20px;Font-weight: 500; margin: 0 1.4rem 0 1rem; color: rgb(112,150,184);">Ask the
+               first
+               questions</span>
+         </div>
+         <div style="margin:4px 25px">
+            <img style="width: 30px; height: 25px;"
+               src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Zs_7_Symbol_in_sicherungstechnischen_Pl%C3%A4nen.svg/150px-Zs_7_Symbol_in_sicherungstechnischen_Pl%C3%A4nen.svg.png?20160217200613"
+               alt="">
+         </div>
+
+      </div>
+      <hr style="opacity:0.5;">
+      <div style="display: flex; justify-content: space-between; padding: 1rem 0; height:1.7rem;">
+
+         <div>
+            <span style="Font-size: 20px;Font-weight: 700; margin: 0 1.4rem 0 1rem;">Returns</span>
+            <span
+               style="Font-size: 20px;Font-weight: 500; margin: 0 1.4rem 0 1rem; color: rgb(112,150,184);">Standard</span>
+         </div>
+         <div style="margin:4px 25px">
+            <img style="width: 30px; height: 25px;"
+               src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Zs_7_Symbol_in_sicherungstechnischen_Pl%C3%A4nen.svg/150px-Zs_7_Symbol_in_sicherungstechnischen_Pl%C3%A4nen.svg.png?20160217200613"
+               alt="">
+         </div>
+
+      </div>
+      <hr style="opacity:0.5;">
+      <div style="margin: 2rem 0 1rem 1rem;">
+         <span style="Font-size: 20px;Font-weight: 700; margin: 0rem 1.4rem 0 1rem;">This Product Matches Well
+            With</span>
+      </div>
+
+      <div class="footerproduct">
+         <div class="matchproduct">
+            <img
+               src="https://ak1.ostkcdn.com/images/products/is/images/direct/934d2c67da0dd216a53f0eb2207cbd49af366e4f/Macie-Sofa.jpg?imwidth=128"
+               alt="matchproduct">
+            <p>Macie Rounded Upholstered Sofa</p>
+         </div>
+
+         <div class="matchproduct">
+            <img
+               src="https://ak1.ostkcdn.com/images/products/10995609/Arden-Loft-Sonoran-Collection-Plains-Throw-Pillow-38e5c8a6-ed07-4ced-a7c9-03b84c1f3bf3_320.jpg?imwidth=128"
+               alt="matchproduct">
+            <p>Throw Pillows</p>
+         </div>
+
+         <div class="matchproduct">
+            <img
+               src="https://ak1.ostkcdn.com/images/products/12915779/IZOD-Oversized-Plush-Throw-e2c8ec20-385a-472e-b604-46a2a264771d_320.jpg?imwidth=128"
+               alt="matchproduct">
+            <p>Blanket & Throws</p>
+         </div>
+
+         <div class="matchproduct">
+            <img
+               src="http://ak1.ostkcdn.com/images/products/is/images/direct/f0ba8c8d7ebcbb7437f68d0190af76eb6ef3e6fe/SAFAVIEH-Tulum-Bora-Moroccan-Boho-Rug.jpg?imwidth=128"
+               alt="matchproduct">
+            <p>Area Rugs</p>
+         </div>
+
+         <div class="matchproduct">
+            <img
+               src="http://ak1.ostkcdn.com/images/products/8816778/Emerald-Chandler-Reclaimed-look-Wood-Cocktail-Table-2a2ebbb4-2cd6-4b38-ac94-e4f391e3a6a3_320.jpg?imwidth=128"
+               alt="matchproduct">
+            <p>Cofee & Tables</p>
+
+         </div>
+
+         <div class="matchproduct">
+            <img
+               src="https://ak1.ostkcdn.com/images/products/10171039/Astounding-Silver-Pineapple-Decor-10f6dfe2-9291-4411-bfeb-41e4450be54e_320.jpg?imwidth=128"
+               alt="matchproduct">
+            <p>Accent pieces</p>
+         </div>
+
+         <div class="matchproduct">
+            <img
+               src="https://ak1.ostkcdn.com/images/products/is/images/direct/ebc4d9a0e6ce4c4a17973e2f2c52409dc5c4a2ef/Bryan-Table-Lamp-in-Golden-Antique-Brass-Finish-with-Linen-Shade.jpg?imwidth=128"
+               alt="matchproduct">
+            <p>Table Lamps</p>
+         </div>
+
+      </div>
+      <hr style="opacity:0.5;">
+      <div class="foothead"
+         style="display: flex;justify-content: center;align-items: center; background-color: rgb(245,246,247); padding-bottom: 2rem;">
+
+         <div
+            style="margin:  0rem 2rem;  font-size: 2rem;width:fit-content; display: flex;flex-direction: column; color: skyblue;">
+            Welcome Rewards
+         </div>
+         <div style="margin:  0rem 2rem;">
+            <h2>Earn 5% Rewards on Every Purchase</h2>
+            <p style="font-size: 1rem;font-weight: 500;">Plus, get FREE returns and so much more!</p>
+         </div>
+
+         <div>
+            <button style="padding:0.7rem 1.5rem; font-size: large; border-radius: 3px;">Learn More</button>
+         </div>
+
+      </div>
+   </Main>
+   <!-- Item_Main ends here -->
+
+   <!-- Footer starts here -->
+   <footer>
+
+      <div id="footer-up">
+         <div>
+            <div>MY ACCOUNT</div>
+            <a href="https://www.overstock.com/myaccount?myacckey=order_info">Orders & Return
+            </a>
+            <a href="https://www.overstock.com/5522/static.html">Email Prefrences</a>
+            <a href="https://www.overstock.com/myaccount?myacckey=account_overview">Account Setting
+            </a>
+         </div>
+         <div>
+            <div>LETS US HELP</div>
+            <a href="https://help.overstock.com/help/s/article/International-Customer-Care">Contact Customer Care</a>
+            <a href="https://overstock.force.com/help/s/article/International-Order-Shipping-Information">Shipping
+               Information
+            </a>
+            <a href="https://help.overstock.com/help/s/article/International-Returns">Return Policy</a>
+            <a href="https://help.overstock.com/help/s/article/International-Help-Home">International Help
+            </a>
+            <a href="https://www.overstock.com/accessibility">Accessibility</a>
+         </div>
+         <div>
+            <div>COMPANY INFORMATION</div>
+            <a href="">About Overstock <span id="logofont">TM</span></a>
+            <a href="">Contact Us </a>
+            <a href="">Career</a>
+            <a href="">Investor Relations</a>
+            <a href="">Sell Your Products</a>
+            <a href="">Supply Chain Transparency</a>
+         </div>
+         <div>
+            <div>MORE WAYS TO SHOP</div>
+            <a href="">Tips & ideas</a>
+            <a href="">Deals </a>
+            <a href="">Clearance</a>
+            <a href="">New Arrivals</a>
+         </div>
+      </div>
+
+      <div id="legal">
+         <div id="legal-left">
+            © Copyright 2023, Overstock.com®, Inc.<br />
+            799 Coliseum Way Midvale, UT 84047 | 1-800-843-2446
+         </div>
+         <div id="legal-right">
+            <a style="color: white" href="">Privacy Policy</a>
+            <a style="color: white" href="">Terms & Condition </a>
+            <a style="color: white" href="">*Promotion Terms</a>
+            <a style="color: white" href="">Ship to : <span> India</span></a>
+         </div>
+      </div>
+   </footer>
+   <!-- Footer ends here -->
+
+</body>
+<script src="./item.js"></script>
+
+</html>
