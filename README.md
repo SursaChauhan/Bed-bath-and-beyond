@@ -106,5 +106,4 @@ We are very thankful for the support of my teammates and instructor for the comp
 - ## Madhukar Kumar
 [GitHub](https://github.com/madhukarkr2468)
 
-- ## Jatin
-[GitHub](https://github.com/Jatin-Rohilla)
+- ## Jatin [GitHub](https://github.com/Jatin-Rohilla)
