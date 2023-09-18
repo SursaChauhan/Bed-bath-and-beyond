@@ -94,16 +94,12 @@ We are very thankful for the support of my teammates and instructor for the comp
 
 ## <span style="color:rgb(255, 200, 0)"> Team Members: </span>
 
-- ## Surendra Singh
-[GitHub](https://github.com/SursaChauhan)
+- ## Surendra Singh -> [GitHub](https://github.com/SursaChauhan)
 
-- ## Swati Mandal
-[GitHub](https://github.com/swatii23)
+- ## Swati Mandal -> [GitHub](https://github.com/swatii23)
 
-- ## Md Sajid
-[GitHub](https://github.com/Sajid788)
+- ## Md Sajid -> [GitHub](https://github.com/Sajid788)
 
-- ## Madhukar Kumar
-[GitHub](https://github.com/madhukarkr2468)
+- ## Madhukar Kumar -> [GitHub](https://github.com/madhukarkr2468)
 
-- ## Jatin [GitHub](https://github.com/Jatin-Rohilla)
+- ## Jatin -> [GitHub](https://github.com/Jatin-Rohilla)
