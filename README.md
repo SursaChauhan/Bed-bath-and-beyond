@@ -1,6 +1,6 @@
 # cut-coach-1829
 This is unit 4 final project. we are devolping clone of https://www.overstock.com/.
-# Bed bath and beyond
+# Bed Bath and Beyond
 bedbathandbeyond.com
 # <span style="color:red"> <i class="fa-solid fa-italic">Cloning of [BED BATH & BEYOND](https://www.bedbathandbeyond.com/) WEBSITE</i></span>
 
