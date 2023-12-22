@@ -12,7 +12,7 @@ It was during the final week which is depicted as the construct week. We have do
 
 # <span style="color:red"> About Website: </span>
 
- [bed bath and beyond](https://6509b685de9fe80cfc50d9a3--velvety-hotteok-be9bd4.netlify.app/),Bed Bath & Beyond is a popular retail chain in the United States that specializes in home goods and furnishings. The Bed Bath & Beyond website serves as an online platform where customers can browse and purchase a wide range of products for their homes.
+ [bed bath and beyond](https://sursachauhan.github.io/Bed-bath-and-beyond/),Bed Bath & Beyond is a popular retail chain in the United States that specializes in home goods and furnishings. The Bed Bath & Beyond website serves as an online platform where customers can browse and purchase a wide range of products for their homes.
  
 
 # <span style="color:red"> Tech Stack Used: </span>
@@ -47,28 +47,28 @@ This entire journey of making the project was awesome. We have learned lots of t
 
 - ## <span style="color:blue"> Home Page </span>
 
-<img width="377" alt="Home page" src="./IMAGES/HomePage.png">
+![home](https://github.com/SursaChauhan/Bed-bath-and-beyond/assets/132122228/8842303f-2742-43cf-b4eb-6df4a3be0da2)
 
  - ## <span style="color:blue"> Login Page</span>
 
- <img width="391" alt="zms footer" src="./IMAGES/L1.png">
+![login](https://github.com/SursaChauhan/Bed-bath-and-beyond/assets/132122228/82fd7b20-f666-478f-a04e-1bfa06ed1f06)
 
 
 - ## <span style="color:blue"> Product Pages</span>
 
-<img width="400" alt="zms 1" src="./IMAGES/P1.png">
-<img width="400" alt="zms 1" src="./IMAGES/P2.png">
-<img width="400" alt="zms 1" src="./IMAGES/P3.png">
+![product](https://github.com/SursaChauhan/Bed-bath-and-beyond/assets/132122228/2aa6a1e5-e001-4234-84f5-1926b8c3909a)
+
+![single](https://github.com/SursaChauhan/Bed-bath-and-beyond/assets/132122228/a875b194-da7f-4c92-bf2f-b0469e50ac94)
+
 
 - ## <span style="color:blue"> Cart Page</span>
 
- <img width="391" alt="zms footer" src="./IMAGES/C1.png">
+![cart](https://github.com/SursaChauhan/Bed-bath-and-beyond/assets/132122228/ead1eacb-52dc-42b8-9856-9664fc0f0081)
 
 
 - ## <span style="color:blue"> Payment Page</span>
 
- <img width="391" alt="zms footer" src="./IMAGES/Pay1.png">
- 
+![payment](https://github.com/SursaChauhan/Bed-bath-and-beyond/assets/132122228/2027d6a6-6e07-4777-8bf1-de6884c2d38e) 
 
 
  
